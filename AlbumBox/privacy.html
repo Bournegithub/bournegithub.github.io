@@ -1,0 +1,1966 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Album Box Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --text: #18202f;
+      --muted: #5d6678;
+      --line: #d8deea;
+      --accent: #2f6fed;
+      --accent-soft: #e9f0ff;
+      --warning: #8a5a00;
+      --warning-bg: #fff5d6;
+      --radius: 8px;
+      --shadow: 0 14px 34px rgba(23, 34, 58, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111620;
+        --panel: #171d29;
+        --text: #eef3fb;
+        --muted: #a7b0c2;
+        --line: #2a3445;
+        --accent: #8db3ff;
+        --accent-soft: #1e2a40;
+        --warning: #ffd984;
+        --warning-bg: #3a2f16;
+        --shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    header {
+      margin-bottom: 20px;
+      padding: 30px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .topline {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .language-control {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+
+    select {
+      max-width: 260px;
+      padding: 9px 12px;
+      color: var(--text);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .summary {
+      margin-top: 22px;
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line));
+      border-radius: var(--radius);
+    }
+
+    .summary h2 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .summary ul,
+    section ul {
+      margin: 0;
+      padding-inline-start: 1.25rem;
+    }
+
+    main {
+      display: grid;
+      gap: 16px;
+    }
+
+    section {
+      padding: 24px 30px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    section h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .notice {
+      margin-top: 16px;
+      padding: 14px 16px;
+      color: var(--warning);
+      background: var(--warning-bg);
+      border-radius: var(--radius);
+      border: 1px solid color-mix(in srgb, var(--warning) 28%, transparent);
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 18px 4px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    [dir="rtl"] .language-control,
+    [dir="rtl"] .topline {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        padding: 16px 12px 34px;
+      }
+
+      header,
+      section {
+        padding: 20px 16px;
+      }
+
+      .topline {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .language-control {
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      select {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="topline">
+        <p class="brand">Album Box</p>
+        <label class="language-control">
+          <span id="languageLabel">Language</span>
+          <select id="languageSelect" aria-label="Language"></select>
+        </label>
+      </div>
+      <h1 id="policyTitle">Album Box Privacy Policy</h1>
+      <p class="meta" id="policyMeta">Effective date: July 7, 2026 · Last updated: July 22, 2026</p>
+      <div class="summary" aria-labelledby="summaryTitle">
+        <h2 id="summaryTitle">Privacy at a glance</h2>
+        <ul id="summaryList">
+          <li>Album Box is a local private album vault. It has no account server, no cloud storage, no advertising SDK, and no third-party analytics SDK.</li>
+          <li>Your imported photos and videos stay on your device unless you choose to sync selected content to a trusted nearby device.</li>
+          <li>Album Box has no remote server and does not transmit any data to any server; outside user-initiated sync, it does not need network access.</li>
+          <li>The app does not collect IDFA, IDFV, location, contacts, microphone data, remote crash logs, or cross-app tracking data.</li>
+        </ul>
+      </div>
+    </header>
+    <main id="policySections" aria-live="polite"></main>
+  </div>
+
+  <script>
+    const CONTACT_EMAIL = "84709745@qq.com";
+    const EFFECTIVE_DATE = "2026-07-07";
+
+    const languageOptions = [
+      ["en", "English"],
+      ["en-GB", "English (United Kingdom)"],
+      ["en-CA", "English (Canada)"],
+      ["en-AU", "English (Australia)"],
+      ["en-NZ", "English (New Zealand)"],
+      ["zh-Hans", "简体中文"],
+      ["zh-Hant", "繁體中文"],
+      ["fr-FR", "Français (France)"],
+      ["fr-CA", "Français (Canada)"],
+      ["de-DE", "Deutsch"],
+      ["it-IT", "Italiano"],
+      ["es-ES", "Español (España)"],
+      ["es-MX", "Español (México)"],
+      ["pt-BR", "Português (Brasil)"],
+      ["nl-NL", "Nederlands"],
+      ["sv-SE", "Svenska"],
+      ["nb-NO", "Norsk bokmål"],
+      ["da-DK", "Dansk"],
+      ["ja-JP", "日本語"],
+      ["ko-KR", "한국어"],
+      ["ar", "العربية"],
+      ["he", "עברית"],
+      ["hi", "हिन्दी"],
+      ["tr", "Türkçe"],
+      ["pl", "Polski"]
+    ];
+
+    const localeMap = {
+      "en": "en",
+      "en-GB": "en",
+      "en-CA": "en",
+      "en-AU": "en",
+      "en-NZ": "en",
+      "zh-Hans": "zh-Hans",
+      "zh-Hant": "zh-Hant",
+      "fr-FR": "fr",
+      "fr-CA": "fr",
+      "de-DE": "de",
+      "it-IT": "it",
+      "es-ES": "es",
+      "es-MX": "es",
+      "pt-BR": "pt",
+      "nl-NL": "nl",
+      "sv-SE": "sv",
+      "nb-NO": "nb",
+      "da-DK": "da",
+      "ja-JP": "ja",
+      "ko-KR": "ko",
+      "ar": "ar",
+      "he": "he",
+      "hi": "hi",
+      "tr": "tr",
+      "pl": "pl"
+    };
+
+    const policies = {
+      en: {
+        languageLabel: "Language",
+        title: "Album Box Privacy Policy",
+        meta: `Effective date: July 7, 2026 · Last updated: July 22, 2026`,
+        summaryTitle: "Privacy at a glance",
+        summary: [
+          "Album Box is a local private album vault. It has no account server, no cloud storage, no advertising SDK, and no third-party analytics SDK.",
+          "Your imported photos and videos stay on your device unless you choose to sync selected content to a trusted nearby device.",
+          "Album Box has no remote server and does not transmit any data to any server; outside user-initiated sync, it does not need network access.",
+          "The app does not collect IDFA, IDFV, location, contacts, microphone data, remote crash logs, or cross-app tracking data."
+        ],
+        sections: [
+          {
+            heading: "1. Introduction",
+            paragraphs: [
+              "Album Box respects your privacy and is designed around local control. This Privacy Policy explains what information the app accesses, how that information is used, where it is stored, whether it is shared, and how you can exercise your privacy rights.",
+              "This policy applies to Album Box on iOS, iPadOS, and macOS. It is written to match the app behavior and the privacy information declared in App Store Connect. Album Box does not perform undisclosed data collection."
+            ]
+          },
+          {
+            heading: "2. Information We Access or Store",
+            paragraphs: [
+              "Media files: Album Box accesses only the photos and videos you import or export. These files are used to create and manage your private local albums, play media in the app, export selected items, and sync selected content only when you initiate device sync.",
+              "Photo Library permission: The app requests photo library access to import the photos and videos you choose and to save selected items back to Photos when you export them. Album Box does not scan your full photo library in the background.",
+              "Camera permission: The camera is used only to scan pairing QR codes shown on your trusted devices. Camera frames are not uploaded to a server and are not used for analytics, advertising, or facial recognition.",
+              "Authentication data: Album Box may store PIN and pattern credential hashes in Keychain. Face ID and Touch ID verification is handled by Apple system frameworks. Album Box never reads, stores, or processes raw biometric data; it receives only a success or failure result from the system.",
+              "Device sync data: For encrypted nearby sync, the app stores a locally generated device identifier, paired device names, public keys, trusted-device records, and temporary transfer manifests. These are used only to recognize trusted devices and complete user-initiated sync.",
+              "Local settings and local logs: The app stores preferences such as language, display mode, sync safety acknowledgements, and local operation records needed to manage the private album library. These records remain on your device.",
+              "Information not collected: Album Box does not collect names, email addresses, phone numbers, IDFA, IDFV, precise or approximate location, contacts, microphone data, payment data, advertising data, remote crash logs, clickstream analytics, or server-side IP logs. If you voluntarily contact the developer, your contact details and message are used only to respond to your request."
+            ]
+          },
+          {
+            heading: "3. Purposes of Use",
+            paragraphs: [
+              "Album Box uses data only for specific app functions: importing and organizing private media, verifying access to private albums, exporting selected files, discovering trusted nearby devices, transferring selected files through encrypted sync, remembering local settings, and letting you delete or clear your local data.",
+              "Album Box does not use your media, device identifier, sync records, or settings for advertising, profiling, cross-app tracking, AI training, content analysis, or resale."
+            ]
+          },
+          {
+            heading: "4. Third-Party SDKs, Services, and Sharing",
+            paragraphs: [
+              "Album Box has no remote server and does not transmit any data to any server. Except when you use sync and enable Local Network and wireless data permissions, the app does not need network access.",
+              "Album Box currently does not include third-party analytics SDKs, advertising SDKs, social login SDKs, payment SDKs, cloud storage services, remote crash-reporting services, or third-party AI services.",
+              "Album Box does not sell, rent, or trade your personal information. The developer does not receive your local album data. When you use device sync, selected data is transferred only to the nearby device you choose and confirm; this is user-directed sharing between your devices or trusted devices, not sharing with the developer or an advertising partner.",
+              "If a future version adds any third-party SDK or new data processing behavior, this policy and the App Store privacy disclosure will be updated before release."
+            ]
+          },
+          {
+            heading: "5. Data Storage, Security, and Retention",
+            paragraphs: [
+              "Storage location: Album Box stores your app data locally in the app sandbox on your device. Sensitive credentials, device identifiers, and sync keys are stored in Keychain where applicable. Album Box has no developer-operated cloud database for your albums.",
+              "Security measures: The app uses the operating system sandbox, Keychain, system Data Protection, permission prompts, and encrypted sync channels with identity checks. To avoid exposing security-sensitive implementation details, this policy does not publish specific key-exchange or protocol internals.",
+              "Retention: Local media and metadata are kept until you delete individual items, clear app data, or uninstall the app. Paired-device records remain until you remove or reset them. Temporary sync information is used only for the active sync flow."
+            ]
+          },
+          {
+            heading: "6. Your Privacy Rights and Choices",
+            paragraphs: [
+              "Access and portability: You can view your media files inside Album Box. You can export selected files to Photos on iPhone and iPad, or to Photos or a chosen location on Mac where supported.",
+              "Correction and control: You can rename folders, move files, change local settings, change language, and manage trusted sync devices inside the app.",
+              "Withdraw permission: You can revoke Photos, Camera, Local Network, and Face ID permissions at any time in iPhone/iPad Settings > Privacy & Security or Mac System Settings > Privacy & Security. The related feature may stop working, but your existing local data remains under your control.",
+              "Delete data: You can delete individual media items in the app or use Settings > Clear Data to remove local library data. You can also uninstall Album Box to remove its local sandbox data. Album Box does not provide account creation or sign-in, so there is no server account to delete.",
+              `Privacy requests: If you have a privacy request or believe your child has provided information to us, contact ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Children’s Privacy",
+            paragraphs: [
+              "Album Box is not directed to children under 13 and does not knowingly collect personal information from children. Because the app has no account server, analytics SDK, advertising SDK, or cloud album service, it does not intentionally transmit children’s personal information to third-party servers.",
+              "Parents or guardians can manage device access through Apple Screen Time and can contact the developer if they believe a child has provided information through a support request."
+            ]
+          },
+          {
+            heading: "8. Policy Updates and Contact",
+            paragraphs: [
+              "If Album Box introduces material changes to data processing, we will update this policy, update the App Store privacy disclosure where required, and notify users through the app or this page when appropriate.",
+              `Contact: ${CONTACT_EMAIL}. Response target: within 15 business days after receiving and verifying a privacy request.`
+            ]
+          }
+        ]
+      },
+      "zh-Hans": {
+        languageLabel: "语言",
+        title: "Album Box 隐私政策",
+        meta: "生效日期：2026年7月7日 · 最后更新：2026年7月22日",
+        summaryTitle: "隐私摘要",
+        summary: [
+          "Album Box 是本地隐私相册保险箱，没有账号服务器、云相册、广告 SDK 或第三方统计 SDK。",
+          "您导入的照片和视频默认只保存在本机；只有在您主动同步时，才会传输到您选择并确认的可信附近设备。",
+          "本应用没有远程服务器，不会向任何服务器传输任何数据。除了同步时需要用户开启本地网络和无线数据权限，其他时间无需使用网络。",
+          "本 App 不收集 IDFA、IDFV、定位、通讯录、麦克风数据、远程崩溃日志或跨 App 跟踪数据。"
+        ],
+        sections: [
+          {
+            heading: "一、引言",
+            paragraphs: [
+              "Album Box 尊重并保护您的隐私。本隐私政策说明本 App 会访问或存储哪些信息、使用目的、存储位置、共享规则、安全措施，以及您可以如何行使隐私权利。",
+              "本政策适用于 iOS、iPadOS 与 macOS 版本的 Album Box，并与 App 实际行为及 App Store Connect 中申报的 App 隐私信息保持一致。Album Box 不存在未披露的数据采集行为。"
+            ]
+          },
+          {
+            heading: "二、信息收集范围与使用目的",
+            paragraphs: [
+              "媒体文件：Album Box 仅访问您主动导入或导出的照片、视频，用于建立和管理本地私密相册、在 App 内播放、导出您选择的文件，以及在您主动发起设备同步时同步您选择的内容。",
+              "照片库权限：用于导入您选择的照片和视频，以及在您执行导出时将选中的内容保存回系统相册。Album Box 不会在后台自动扫描您的全部相册。",
+              "相机权限：仅用于扫描可信设备上显示的配对二维码。相机画面不会上传服务器，也不会用于统计、广告或人脸识别。",
+              "身份验证数据：Album Box 可能将 PIN 或手势密码的哈希值保存到 Keychain。Face ID / Touch ID 由 Apple 系统框架处理，Album Box 不读取、不保存、不处理任何原始生物识别数据，只接收系统返回的验证成功或失败结果。",
+              "设备同步数据：为实现附近设备加密同步，App 会在本地保存生成的设备标识符、已配对设备名称、公钥、可信设备记录和临时传输清单。这些数据仅用于识别可信设备和完成用户主动发起的同步。",
+              "本地设置与本地日志：App 会在本机保存语言、显示模式、同步安全提示确认状态和用于本地相册管理的操作记录。这些信息不会上传到开发者服务器。",
+              "不收集的信息：Album Box 不收集姓名、邮箱、手机号、IDFA、IDFV、精确或模糊定位、通讯录、麦克风数据、支付数据、广告数据、远程崩溃日志、点击流统计或服务器 IP 日志。如果您主动联系开发者，您的联系方式和消息内容仅用于回复请求。"
+            ]
+          },
+          {
+            heading: "三、数据使用目的",
+            paragraphs: [
+              "Album Box 使用数据仅为完成明确功能：导入和整理私密媒体、验证进入私密相册、导出选中文件、发现可信附近设备、通过加密同步传输选中文件、记住本地设置，以及让您删除或清除本地数据。",
+              "Album Box 不会将您的媒体文件、设备标识、同步记录或设置用于广告投放、画像、跨 App 跟踪、AI 训练、内容分析或出售。"
+            ]
+          },
+          {
+            heading: "四、第三方 SDK、服务与数据共享",
+            paragraphs: [
+              "本应用没有远程服务器，不会向任何服务器传输任何数据。除了同步时需要用户开启本地网络和无线数据权限，其他时间无需使用网络。",
+              "Album Box 当前不接入第三方统计 SDK、广告 SDK、社交登录 SDK、支付 SDK、云存储服务、远程崩溃收集服务或第三方 AI 服务。",
+              "Album Box 不出售、出租或交易您的个人信息。开发者不会收到您的本地相册数据。当您使用设备同步时，选中的数据只会传输到您选择并确认的附近设备；这是由用户主动发起的设备间共享，不是向开发者或广告合作方共享。",
+              "如果未来版本新增任何第三方 SDK 或新的数据处理行为，我们会在发布前更新本政策和 App Store 隐私披露。"
+            ]
+          },
+          {
+            heading: "五、数据存储、安全与保留期限",
+            paragraphs: [
+              "存储位置：Album Box 将 App 数据保存在您设备上的 App 沙盒中。敏感凭据、设备标识符和同步密钥会按适用场景保存到 Keychain。Album Box 没有开发者运营的云端相册数据库。",
+              "安全措施：App 使用系统沙盒、Keychain、系统 Data Protection、权限弹窗，以及带身份校验的加密同步通道。为避免暴露可能影响安全的实现细节，本政策不公开具体密钥交换或协议内部细节。",
+              "保留期限：本地媒体和元数据会保留到您删除单个项目、清除 App 数据或卸载 App 为止。已配对设备记录会保留到您移除或重置。临时同步信息仅用于当前同步流程。"
+            ]
+          },
+          {
+            heading: "六、您的隐私权利与选择",
+            paragraphs: [
+              "访问与获取：您可以在 Album Box 内查看所有媒体文件。您可以在 iPhone 和 iPad 上将选中文件导出到系统相册；在 Mac 支持的场景下，也可以导出到系统相册或指定位置。",
+              "更正与控制：您可以在 App 内重命名文件夹、移动文件、调整本地设置、切换语言并管理可信同步设备。",
+              "撤回授权：您可以随时在 iPhone/iPad 设置 > 隐私与安全性，或 Mac 系统设置 > 隐私与安全性中撤回照片、相机、本地网络和 Face ID 权限。撤回后对应功能可能停止工作，但不会影响您对已存储本地数据的控制。",
+              "删除数据：您可以在 App 内删除单个媒体项目，或通过设置 > 清除数据删除本地相册数据。您也可以卸载 Album Box 删除其本地沙盒数据。Album Box 当前不提供账号创建或登录，因此不存在需要删除的服务器账号。",
+              `隐私请求：如您有隐私请求，或认为儿童通过支持请求向我们提供了信息，请联系 ${CONTACT_EMAIL}。`
+            ]
+          },
+          {
+            heading: "七、儿童隐私保护",
+            paragraphs: [
+              "Album Box 不面向 13 岁以下儿童，也不会故意收集儿童个人信息。由于本 App 没有账号服务器、统计 SDK、广告 SDK 或云相册服务，它不会主动将儿童个人信息传输到第三方服务器。",
+              "家长或监护人可以通过 Apple 屏幕使用时间管理设备访问；如果您认为儿童通过支持请求提供了信息，可以联系开发者处理。"
+            ]
+          },
+          {
+            heading: "八、政策更新与联系我们",
+            paragraphs: [
+              "如果 Album Box 引入重大数据处理变化，我们会更新本政策，并在必要时更新 App Store 隐私披露，通过 App 内提示或本页面通知用户。",
+              `联系方式：${CONTACT_EMAIL}。回复时限：收到并核验隐私请求后，目标在 15 个工作日内回复。`
+            ]
+          }
+        ]
+      },
+      "zh-Hant": {
+        languageLabel: "語言",
+        title: "Album Box 隱私政策",
+        meta: "生效日期：2026年7月7日 · 最後更新：2026年7月22日",
+        summaryTitle: "隱私摘要",
+        summary: [
+          "Album Box 是本機隱私相簿保險箱，沒有帳號伺服器、雲端相簿、廣告 SDK 或第三方統計 SDK。",
+          "您匯入的照片和影片預設只保存在本機；只有在您主動同步時，才會傳輸到您選擇並確認的可信任附近裝置。",
+          "本應用沒有遠端伺服器，不會向任何伺服器傳輸任何資料。除了同步時需要使用者開啟本機網路和無線數據權限，其他時間無需使用網路。",
+          "本 App 不收集 IDFA、IDFV、定位、通訊錄、麥克風資料、遠端崩潰日誌或跨 App 追蹤資料。"
+        ],
+        sections: [
+          {
+            heading: "一、引言",
+            paragraphs: [
+              "Album Box 尊重並保護您的隱私。本隱私政策說明本 App 會存取或儲存哪些資訊、使用目的、儲存位置、共享規則、安全措施，以及您可以如何行使隱私權利。",
+              "本政策適用於 iOS、iPadOS 與 macOS 版本的 Album Box，並與 App 實際行為及 App Store Connect 中申報的 App 隱私資訊保持一致。Album Box 不存在未披露的資料蒐集行為。"
+            ]
+          },
+          {
+            heading: "二、資訊蒐集範圍與使用目的",
+            paragraphs: [
+              "媒體檔案：Album Box 僅存取您主動匯入或匯出的照片、影片，用於建立和管理本機私密相簿、在 App 內播放、匯出您選擇的檔案，以及在您主動發起裝置同步時同步您選擇的內容。",
+              "照片圖庫權限：用於匯入您選擇的照片和影片，以及在您執行匯出時將選中的內容保存回系統相簿。Album Box 不會在背景自動掃描您的全部相簿。",
+              "相機權限：僅用於掃描可信任裝置上顯示的配對 QR Code。相機畫面不會上傳伺服器，也不會用於統計、廣告或臉部辨識。",
+              "身分驗證資料：Album Box 可能將 PIN 或手勢密碼的雜湊值保存到 Keychain。Face ID / Touch ID 由 Apple 系統框架處理，Album Box 不讀取、不保存、不處理任何原始生物識別資料，只接收系統返回的驗證成功或失敗結果。",
+              "裝置同步資料：為實現附近裝置加密同步，App 會在本機保存產生的裝置識別碼、已配對裝置名稱、公鑰、可信任裝置記錄和臨時傳輸清單。這些資料僅用於識別可信任裝置和完成使用者主動發起的同步。",
+              "本機設定與本機日誌：App 會在本機保存語言、顯示模式、同步安全提示確認狀態和用於本機相簿管理的操作記錄。這些資訊不會上傳到開發者伺服器。",
+              "不蒐集的資訊：Album Box 不收集姓名、電子郵件、電話號碼、IDFA、IDFV、精確或模糊定位、通訊錄、麥克風資料、支付資料、廣告資料、遠端崩潰日誌、點擊流統計或伺服器 IP 日誌。如果您主動聯絡開發者，您的聯絡方式和訊息內容僅用於回覆請求。"
+            ]
+          },
+          {
+            heading: "三、資料使用目的",
+            paragraphs: [
+              "Album Box 使用資料僅為完成明確功能：匯入和整理私密媒體、驗證進入私密相簿、匯出選中文件、發現可信任附近裝置、透過加密同步傳輸選中文件、記住本機設定，以及讓您刪除或清除本機資料。",
+              "Album Box 不會將您的媒體檔案、裝置識別、同步記錄或設定用於廣告投放、使用者畫像、跨 App 追蹤、AI 訓練、內容分析或出售。"
+            ]
+          },
+          {
+            heading: "四、第三方 SDK、服務與資料共享",
+            paragraphs: [
+              "本應用沒有遠端伺服器，不會向任何伺服器傳輸任何資料。除了同步時需要使用者開啟本機網路和無線數據權限，其他時間無需使用網路。",
+              "Album Box 目前不接入第三方統計 SDK、廣告 SDK、社交登入 SDK、支付 SDK、雲端儲存服務、遠端崩潰收集服務或第三方 AI 服務。",
+              "Album Box 不出售、出租或交易您的個人資訊。開發者不會收到您的本機相簿資料。當您使用裝置同步時，選中的資料只會傳輸到您選擇並確認的附近裝置；這是由使用者主動發起的裝置間共享，不是向開發者或廣告合作方共享。",
+              "如果未來版本新增任何第三方 SDK 或新的資料處理行為，我們會在發布前更新本政策和 App Store 隱私披露。"
+            ]
+          },
+          {
+            heading: "五、資料儲存、安全與保留期限",
+            paragraphs: [
+              "儲存位置：Album Box 將 App 資料保存在您裝置上的 App 沙盒中。敏感憑據、裝置識別碼和同步密鑰會按適用場景保存到 Keychain。Album Box 沒有開發者營運的雲端相簿資料庫。",
+              "安全措施：App 使用系統沙盒、Keychain、系統 Data Protection、權限彈窗，以及帶身分校驗的加密同步通道。為避免暴露可能影響安全的實作細節，本政策不公開具體密鑰交換或協議內部細節。",
+              "保留期限：本機媒體和中繼資料會保留到您刪除單個項目、清除 App 資料或卸載 App 為止。已配對裝置記錄會保留到您移除或重置。臨時同步資訊僅用於目前同步流程。"
+            ]
+          },
+          {
+            heading: "六、您的隱私權利與選擇",
+            paragraphs: [
+              "存取與取得：您可以在 Album Box 內查看所有媒體檔案。您可以在 iPhone 和 iPad 上將選中文件匯出到系統相簿；在 Mac 支援的場景下，也可以匯出到系統相簿或指定位置。",
+              "更正與控制：您可以在 App 內重新命名資料夾、移動檔案、調整本機設定、切換語言並管理可信任同步裝置。",
+              "撤回授權：您可以隨時在 iPhone/iPad 設定 > 隱私權與安全性，或 Mac 系統設定 > 隱私權與安全性中撤回照片、相機、本機網路和 Face ID 權限。撤回後對應功能可能停止工作，但不會影響您對已儲存本機資料的控制。",
+              "刪除資料：您可以在 App 內刪除單個媒體項目，或透過設定 > 清除資料刪除本機相簿資料。您也可以卸載 Album Box 刪除其本機沙盒資料。Album Box 目前不提供帳號建立或登入，因此不存在需要刪除的伺服器帳號。",
+              `隱私請求：如您有隱私請求，或認為兒童透過支援請求向我們提供了資訊，請聯絡 ${CONTACT_EMAIL}。`
+            ]
+          },
+          {
+            heading: "七、兒童隱私保護",
+            paragraphs: [
+              "Album Box 不面向 13 歲以下兒童，也不會故意收集兒童個人資訊。由於本 App 沒有帳號伺服器、統計 SDK、廣告 SDK 或雲端相簿服務，它不會主動將兒童個人資訊傳輸到第三方伺服器。",
+              "家長或監護人可以透過 Apple 螢幕使用時間管理裝置存取；如果您認為兒童透過支援請求提供了資訊，可以聯絡開發者處理。"
+            ]
+          },
+          {
+            heading: "八、政策更新與聯絡我們",
+            paragraphs: [
+              "如果 Album Box 引入重大資料處理變化，我們會更新本政策，並在必要時更新 App Store 隱私披露，透過 App 內提示或本頁面通知使用者。",
+              `聯絡方式：${CONTACT_EMAIL}。回覆時限：收到並核驗隱私請求後，目標在 15 個工作日內回覆。`
+            ]
+          }
+        ]
+      },
+      fr: {
+        languageLabel: "Langue",
+        title: "Politique de confidentialité d’Album Box",
+        meta: "Date d’entrée en vigueur : 7 juillet 2026 · Dernière mise à jour : 22 juillet 2026",
+        summaryTitle: "Résumé de confidentialité",
+        summary: [
+          "Album Box est un coffre d’albums privé local, sans serveur de compte, sans stockage cloud, sans SDK publicitaire et sans SDK d’analyse tiers.",
+          "Les photos et vidéos importées restent sur votre appareil, sauf si vous choisissez de synchroniser du contenu sélectionné avec un appareil proche de confiance.",
+          "Album Box n’a pas de serveur distant et ne transmet aucune donnée à un serveur. Sauf pendant une synchronisation lancée par l’utilisateur avec les autorisations Réseau local et données sans fil, l’app n’a pas besoin d’accès réseau.",
+          "L’app ne collecte pas IDFA, IDFV, localisation, contacts, microphone, rapports de crash distants ni données de suivi inter-apps."
+        ],
+        sections: [
+          {
+            heading: "1. Introduction",
+            paragraphs: [
+              "Album Box respecte votre vie privée et privilégie le contrôle local. Cette politique explique les informations auxquelles l’app accède ou qu’elle stocke, leurs finalités, leur lieu de stockage, les règles de partage, les mesures de sécurité et vos droits.",
+              "Elle s’applique à Album Box sur iOS, iPadOS et macOS et reflète le comportement réel de l’app ainsi que les informations de confidentialité déclarées dans App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Informations utilisées",
+            paragraphs: [
+              "Album Box accède uniquement aux photos et vidéos que vous importez ou exportez. Elles servent à gérer vos albums privés locaux, lire les médias, exporter les éléments choisis et synchroniser uniquement le contenu que vous sélectionnez.",
+              "L’autorisation Photos sert à importer les médias choisis et à enregistrer les éléments exportés. L’app ne scanne pas toute votre photothèque en arrière-plan.",
+              "La caméra sert uniquement à scanner les QR codes d’appairage affichés sur vos appareils de confiance. Les images caméra ne sont pas envoyées à un serveur.",
+              "Les hashes de PIN ou de schéma peuvent être stockés dans le Keychain. Face ID et Touch ID sont gérés par les frameworks système Apple ; Album Box ne lit ni ne stocke les données biométriques brutes.",
+              "Pour la synchronisation chiffrée, l’app stocke localement un identifiant d’appareil généré par l’app, les noms d’appareils appairés, les clés publiques, les enregistrements d’appareils de confiance et les manifestes temporaires.",
+              "L’app conserve aussi localement les préférences de langue, d’affichage et les journaux opérationnels nécessaires à la gestion de la bibliothèque. Elle ne collecte pas nom, e-mail, téléphone, IDFA, IDFV, localisation, contacts, microphone, paiement, publicité, analytics, rapports de crash distants ni journaux IP serveur."
+            ]
+          },
+          {
+            heading: "3. Finalités",
+            paragraphs: [
+              "Les données sont utilisées uniquement pour importer, organiser et lire les médias privés, vérifier l’accès, exporter les fichiers choisis, trouver des appareils proches de confiance, transférer des fichiers par synchronisation chiffrée, mémoriser les réglages locaux et permettre la suppression des données.",
+              "Album Box n’utilise pas vos médias ou identifiants pour la publicité, le profilage, le suivi inter-apps, l’entraînement IA, l’analyse de contenu ou la revente."
+            ]
+          },
+          {
+            heading: "4. Services tiers et partage",
+            paragraphs: [
+              "Album Box n’intègre actuellement aucun SDK d’analyse, de publicité, de connexion sociale, de paiement, de stockage cloud, de rapports de crash distants ni de service IA tiers.",
+              "Nous ne vendons, louons ni échangeons vos informations. Lors d’une synchronisation, les données choisies sont transférées uniquement vers l’appareil proche que vous confirmez."
+            ]
+          },
+          {
+            heading: "5. Stockage, sécurité et conservation",
+            paragraphs: [
+              "Les données sont stockées localement dans le sandbox de l’app. Les identifiants sensibles, clés et données d’authentification sont stockés dans le Keychain lorsque c’est approprié.",
+              "L’app utilise le sandbox système, Keychain, Data Protection, les autorisations système et des canaux de synchronisation chiffrés avec vérification d’identité.",
+              "Les médias et métadonnées restent jusqu’à leur suppression, l’effacement des données de l’app ou la désinstallation. Les informations temporaires de synchronisation ne servent qu’au flux actif."
+            ]
+          },
+          {
+            heading: "6. Vos droits",
+            paragraphs: [
+              "Vous pouvez consulter vos médias dans l’app, exporter les fichiers choisis, renommer des dossiers, déplacer des fichiers, modifier les réglages locaux et gérer les appareils de confiance.",
+              "Vous pouvez retirer les autorisations Photos, Caméra, Réseau local et Face ID dans les réglages système. Vous pouvez supprimer des éléments, utiliser Réglages > Effacer les données ou désinstaller l’app.",
+              `Album Box ne propose pas de création de compte ni de connexion ; il n’existe donc pas de compte serveur à supprimer. Pour toute demande de confidentialité, contactez ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Confidentialité des enfants",
+            paragraphs: [
+              "Album Box ne s’adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment leurs informations personnelles. Sans serveur de compte, cloud, analytics ou publicité, l’app ne transmet pas intentionnellement ces informations à des serveurs tiers."
+            ]
+          },
+          {
+            heading: "8. Mises à jour et contact",
+            paragraphs: [
+              "En cas de changement important du traitement des données, nous mettrons à jour cette politique et les déclarations App Store nécessaires.",
+              `Contact : ${CONTACT_EMAIL}. Objectif de réponse : 15 jours ouvrés après réception et vérification de la demande.`
+            ],
+          }
+        ]
+      },
+      de: {
+        languageLabel: "Sprache",
+        title: "Album Box Datenschutzrichtlinie",
+        meta: "Gültig ab: 7. Juli 2026 · Zuletzt aktualisiert: 22. Juli 2026",
+        summaryTitle: "Datenschutz auf einen Blick",
+        summary: [
+          "Album Box ist ein lokaler privater Album-Tresor ohne Kontoserver, Cloud-Speicher, Werbe-SDK oder Analyse-SDK Dritter.",
+          "Importierte Fotos und Videos bleiben auf Ihrem Gerät, außer Sie synchronisieren ausgewählte Inhalte mit einem bestätigten nahen Gerät.",
+          "Album Box hat keinen entfernten Server und überträgt keine Daten an Server. Außer bei von Ihnen gestarteter Synchronisierung mit lokaler Netzwerk- und Drahtlosdatenberechtigung benötigt die App keinen Netzwerkzugriff.",
+          "Die App sammelt keine IDFA, IDFV, Standortdaten, Kontakte, Mikrofondaten, entfernten Crashberichte oder Cross-App-Tracking-Daten."
+        ],
+        sections: [
+          {
+            heading: "1. Einführung",
+            paragraphs: [
+              "Album Box respektiert Ihre Privatsphäre und ist auf lokale Kontrolle ausgelegt. Diese Richtlinie erklärt, welche Informationen die App nutzt oder speichert, wofür sie verwendet werden, wo sie gespeichert werden, ob sie geteilt werden und welche Rechte Sie haben.",
+              "Sie gilt für Album Box auf iOS, iPadOS und macOS und entspricht dem tatsächlichen Verhalten der App sowie den Angaben in App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Verwendete Informationen",
+            paragraphs: [
+              "Album Box greift nur auf Fotos und Videos zu, die Sie importieren oder exportieren. Sie werden für lokale private Alben, Wiedergabe, Export und von Ihnen gestartete Synchronisierung ausgewählter Inhalte verwendet.",
+              "Die Fotoberechtigung dient Import und Export gewählter Medien. Die App scannt Ihre gesamte Mediathek nicht im Hintergrund.",
+              "Die Kamera wird nur zum Scannen von Kopplungs-QR-Codes auf vertrauenswürdigen Geräten genutzt. Kamerabilder werden nicht hochgeladen.",
+              "PIN- und Muster-Hashes können im Keychain gespeichert werden. Face ID und Touch ID werden durch Apple-Systemframeworks verarbeitet; Album Box liest oder speichert keine biometrischen Rohdaten.",
+              "Für verschlüsselte Synchronisierung speichert die App lokal eine erzeugte Gerätekennung, Namen gekoppelter Geräte, öffentliche Schlüssel, Vertrauensdatensätze und temporäre Transferlisten.",
+              "Lokale Einstellungen und Bedienprotokolle bleiben auf dem Gerät. Die App sammelt keine Namen, E-Mails, Telefonnummern, IDFA, IDFV, Standortdaten, Kontakte, Mikrofon-, Zahlungs-, Werbe-, Analytics-, entfernte Crash- oder Server-IP-Daten."
+            ]
+          },
+          {
+            heading: "3. Zwecke",
+            paragraphs: [
+              "Daten werden nur genutzt, um private Medien zu importieren, zu organisieren, zu prüfen, zu exportieren, vertrauenswürdige Geräte zu finden, ausgewählte Dateien verschlüsselt zu synchronisieren, lokale Einstellungen zu speichern und Löschung zu ermöglichen.",
+              "Album Box nutzt Ihre Medien oder Kennungen nicht für Werbung, Profiling, Cross-App-Tracking, KI-Training, Inhaltsanalyse oder Verkauf."
+            ]
+          },
+          {
+            heading: "4. Drittanbieter und Weitergabe",
+            paragraphs: [
+              "Album Box enthält derzeit keine SDKs für Analyse, Werbung, soziale Anmeldung, Zahlung, Cloud-Speicher, entfernte Crashberichte oder KI-Dienste Dritter.",
+              "Wir verkaufen, vermieten oder handeln keine persönlichen Informationen. Bei Synchronisierung werden ausgewählte Daten nur an das von Ihnen bestätigte nahe Gerät übertragen."
+            ]
+          },
+          {
+            heading: "5. Speicherung, Sicherheit und Aufbewahrung",
+            paragraphs: [
+              "Daten werden lokal im App-Sandbox gespeichert. Sensible Anmeldedaten, Gerätekennungen und Schlüssel werden soweit passend im Keychain gespeichert.",
+              "Die App nutzt System-Sandbox, Keychain, Data Protection, Systemberechtigungen und verschlüsselte Synchronisierungskanäle mit Identitätsprüfung.",
+              "Medien und Metadaten bleiben bis zur Löschung, Datenbereinigung oder Deinstallation erhalten. Temporäre Synchronisierungsdaten dienen nur dem aktiven Vorgang."
+            ]
+          },
+          {
+            heading: "6. Ihre Rechte",
+            paragraphs: [
+              "Sie können Medien anzeigen, gewählte Dateien exportieren, Ordner umbenennen, Dateien verschieben, lokale Einstellungen ändern und vertrauenswürdige Geräte verwalten.",
+              "Sie können Berechtigungen für Fotos, Kamera, lokales Netzwerk und Face ID in den Systemeinstellungen widerrufen. Sie können Elemente löschen, Einstellungen > Daten löschen verwenden oder die App deinstallieren.",
+              `Album Box bietet keine Kontoerstellung oder Anmeldung; daher gibt es kein Serverkonto zu löschen. Datenschutzanfragen richten Sie an ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Kinder",
+            paragraphs: [
+              "Album Box richtet sich nicht an Kinder unter 13 Jahren und sammelt wissentlich keine personenbezogenen Daten von Kindern. Ohne Kontoserver, Cloud, Analyse oder Werbung übermittelt die App solche Daten nicht absichtlich an Drittserver."
+            ]
+          },
+          {
+            heading: "8. Updates und Kontakt",
+            paragraphs: [
+              "Bei wesentlichen Änderungen der Datenverarbeitung aktualisieren wir diese Richtlinie und die erforderlichen App-Store-Angaben.",
+              `Kontakt: ${CONTACT_EMAIL}. Ziel für Antworten: innerhalb von 15 Arbeitstagen nach Eingang und Prüfung.`
+            ],
+          }
+        ]
+      },
+      it: {
+        languageLabel: "Lingua",
+        title: "Informativa sulla privacy di Album Box",
+        meta: "Data di efficacia: 7 luglio 2026 · Ultimo aggiornamento: 22 luglio 2026",
+        summaryTitle: "Privacy in breve",
+        summary: [
+          "Album Box è un archivio locale per album privati, senza server account, cloud, SDK pubblicitari o SDK di analisi di terze parti.",
+          "Foto e video importati restano sul dispositivo salvo sincronizzazione scelta verso un dispositivo vicino attendibile.",
+          "Album Box non ha server remoti e non trasmette dati ad alcun server. Salvo la sincronizzazione avviata dall’utente con autorizzazioni Rete locale e dati wireless, l’app non richiede accesso alla rete.",
+          "L’app non raccoglie IDFA, IDFV, posizione, contatti, microfono, crash log remoti o dati di tracciamento tra app."
+        ],
+        sections: [
+          {
+            heading: "1. Introduzione",
+            paragraphs: [
+              "Album Box rispetta la privacy ed è progettata per il controllo locale. Questa informativa spiega quali informazioni l’app usa o conserva, per quali finalità, dove sono archiviate, se vengono condivise e quali diritti hai.",
+              "Si applica ad Album Box su iOS, iPadOS e macOS e riflette il comportamento reale dell’app e le dichiarazioni privacy in App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Informazioni usate",
+            paragraphs: [
+              "Album Box accede solo alle foto e ai video che importi o esporti, per gestire album privati locali, riprodurre media, esportare elementi scelti e sincronizzare contenuti selezionati da te.",
+              "Il permesso Foto serve per importare ed esportare i media scelti. L’app non scansiona l’intera libreria in background.",
+              "La fotocamera serve solo a scansionare QR code di abbinamento su dispositivi attendibili. Le immagini non vengono caricate.",
+              "Hash di PIN o sequenza possono essere salvati nel Keychain. Face ID e Touch ID sono gestiti dal sistema Apple; Album Box non legge né salva dati biometrici grezzi.",
+              "Per la sincronizzazione cifrata l’app salva localmente un identificatore dispositivo generato, nomi dei dispositivi abbinati, chiavi pubbliche, record attendibili e manifest temporanei.",
+              "Impostazioni e registri locali restano sul dispositivo. L’app non raccoglie nome, email, telefono, IDFA, IDFV, posizione, contatti, microfono, pagamento, pubblicità, analytics, crash remoti o log IP server."
+            ]
+          },
+          {
+            heading: "3. Finalità",
+            paragraphs: [
+              "I dati servono solo a importare, organizzare, verificare accesso, esportare, trovare dispositivi attendibili, trasferire file con sincronizzazione cifrata, ricordare impostazioni e consentire la cancellazione.",
+              "Album Box non usa media o identificatori per pubblicità, profilazione, tracciamento tra app, addestramento IA, analisi contenuti o vendita."
+            ]
+          },
+          {
+            heading: "4. Terze parti e condivisione",
+            paragraphs: [
+              "Album Box non include SDK di analisi, pubblicità, login social, pagamento, cloud, crash report remoti o servizi IA di terze parti.",
+              "Non vendiamo né cediamo informazioni personali. Durante la sincronizzazione, i dati scelti vanno solo al dispositivo vicino confermato da te."
+            ]
+          },
+          {
+            heading: "5. Archiviazione e sicurezza",
+            paragraphs: [
+              "I dati sono conservati localmente nel sandbox dell’app. Credenziali, identificatori e chiavi sensibili sono salvati nel Keychain quando applicabile.",
+              "L’app usa sandbox di sistema, Keychain, Data Protection, autorizzazioni di sistema e canali di sincronizzazione cifrati con verifica identità.",
+              "Media e metadati restano finché non li elimini, cancelli i dati dell’app o disinstalli l’app. I dati temporanei di sync servono solo al flusso attivo."
+            ]
+          },
+          {
+            heading: "6. I tuoi diritti",
+            paragraphs: [
+              "Puoi vedere i media, esportare file scelti, rinominare cartelle, spostare file, cambiare impostazioni locali e gestire dispositivi attendibili.",
+              "Puoi revocare Foto, Fotocamera, Rete locale e Face ID nelle impostazioni di sistema. Puoi eliminare elementi, usare Impostazioni > Cancella dati o disinstallare l’app.",
+              `Album Box non offre account o login, quindi non esiste un account server da eliminare. Per richieste privacy contatta ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Minori",
+            paragraphs: [
+              "Album Box non è rivolta a bambini sotto i 13 anni e non raccoglie consapevolmente dati personali di bambini. Senza server account, cloud, analytics o pubblicità, non trasmette intenzionalmente tali dati a server terzi."
+            ]
+          },
+          {
+            heading: "8. Aggiornamenti e contatto",
+            paragraphs: [
+              "In caso di modifiche rilevanti al trattamento dei dati aggiorneremo questa informativa e le dichiarazioni App Store richieste.",
+              `Contatto: ${CONTACT_EMAIL}. Obiettivo di risposta: entro 15 giorni lavorativi dalla ricezione e verifica.`
+            ],
+          }
+        ]
+      },
+      es: {
+        languageLabel: "Idioma",
+        title: "Política de privacidad de Album Box",
+        meta: "Fecha de entrada en vigor: 7 de julio de 2026 · Última actualización: 22 de julio de 2026",
+        summaryTitle: "Privacidad en resumen",
+        summary: [
+          "Album Box es una caja fuerte local para álbumes privados, sin servidor de cuenta, nube, SDK publicitario ni SDK de analítica de terceros.",
+          "Las fotos y vídeos importados permanecen en su dispositivo salvo que elija sincronizar contenido seleccionado con un dispositivo cercano de confianza.",
+          "Album Box no tiene servidor remoto y no transmite datos a ningún servidor. Salvo durante la sincronización iniciada por el usuario con permisos de red local y datos inalámbricos, la app no necesita acceso a la red.",
+          "La app no recopila IDFA, IDFV, ubicación, contactos, micrófono, registros remotos de fallos ni datos de seguimiento entre apps."
+        ],
+        sections: [
+          {
+            heading: "1. Introducción",
+            paragraphs: [
+              "Album Box respeta su privacidad y está diseñada para el control local. Esta política explica qué información usa o almacena la app, con qué finalidad, dónde se guarda, si se comparte y qué derechos tiene.",
+              "Se aplica a Album Box en iOS, iPadOS y macOS y refleja el comportamiento real de la app y la información declarada en App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Información usada",
+            paragraphs: [
+              "Album Box accede solo a las fotos y vídeos que usted importa o exporta para gestionar álbumes privados locales, reproducir medios, exportar elementos elegidos y sincronizar contenido seleccionado por usted.",
+              "El permiso de Fotos se usa para importar y exportar los medios elegidos. La app no escanea toda la biblioteca en segundo plano.",
+              "La cámara se usa solo para escanear códigos QR de emparejamiento en dispositivos de confianza. Las imágenes de cámara no se suben.",
+              "Los hashes de PIN o patrón pueden guardarse en Keychain. Face ID y Touch ID los gestiona el sistema Apple; Album Box no lee ni guarda datos biométricos brutos.",
+              "Para sincronización cifrada, la app guarda localmente un identificador generado, nombres de dispositivos emparejados, claves públicas, registros de confianza y manifiestos temporales.",
+              "Los ajustes y registros locales permanecen en el dispositivo. La app no recopila nombre, correo, teléfono, IDFA, IDFV, ubicación, contactos, micrófono, pago, publicidad, analítica, fallos remotos ni registros IP de servidor."
+            ]
+          },
+          {
+            heading: "3. Finalidades",
+            paragraphs: [
+              "Los datos se usan solo para importar, organizar, verificar acceso, exportar, encontrar dispositivos cercanos de confianza, transferir archivos mediante sincronización cifrada, recordar ajustes y permitir borrado.",
+              "Album Box no usa sus medios o identificadores para publicidad, perfiles, seguimiento entre apps, entrenamiento de IA, análisis de contenido o venta."
+            ]
+          },
+          {
+            heading: "4. Terceros y compartición",
+            paragraphs: [
+              "Album Box no incluye SDK de analítica, publicidad, inicio de sesión social, pagos, nube, informes remotos de fallos ni servicios de IA de terceros.",
+              "No vendemos ni alquilamos información personal. Durante la sincronización, los datos elegidos se transfieren solo al dispositivo cercano que usted confirma."
+            ]
+          },
+          {
+            heading: "5. Almacenamiento y seguridad",
+            paragraphs: [
+              "Los datos se guardan localmente en el sandbox de la app. Credenciales, identificadores y claves sensibles se guardan en Keychain cuando corresponde.",
+              "La app usa sandbox del sistema, Keychain, Data Protection, permisos del sistema y canales de sincronización cifrados con comprobación de identidad.",
+              "Los medios y metadatos permanecen hasta que los elimine, borre los datos de la app o la desinstale. Los datos temporales de sincronización solo sirven al flujo activo."
+            ]
+          },
+          {
+            heading: "6. Sus derechos",
+            paragraphs: [
+              "Puede ver medios, exportar archivos elegidos, renombrar carpetas, mover archivos, cambiar ajustes locales y gestionar dispositivos de confianza.",
+              "Puede retirar Fotos, Cámara, Red local y Face ID en los ajustes del sistema. Puede eliminar elementos, usar Ajustes > Borrar datos o desinstalar la app.",
+              `Album Box no ofrece creación de cuenta ni inicio de sesión; por tanto no hay cuenta de servidor que eliminar. Para solicitudes de privacidad contacte con ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Menores",
+            paragraphs: [
+              "Album Box no está dirigida a menores de 13 años y no recopila deliberadamente información personal de niños. Sin servidor de cuenta, nube, analítica o publicidad, no transmite intencionadamente esos datos a servidores de terceros."
+            ]
+          },
+          {
+            heading: "8. Actualizaciones y contacto",
+            paragraphs: [
+              "Si cambia materialmente el tratamiento de datos, actualizaremos esta política y las declaraciones de App Store necesarias.",
+              `Contacto: ${CONTACT_EMAIL}. Objetivo de respuesta: 15 días laborables tras recibir y verificar la solicitud.`
+            ],
+          }
+        ]
+      },
+      pt: {
+        languageLabel: "Idioma",
+        title: "Política de Privacidade do Album Box",
+        meta: "Data de vigência: 7 de julho de 2026 · Última atualização: 22 de julho de 2026",
+        summaryTitle: "Privacidade em resumo",
+        summary: [
+          "Album Box é um cofre local de álbuns privados, sem servidor de conta, nuvem, SDK de anúncios ou SDK de análise de terceiros.",
+          "Fotos e vídeos importados ficam no dispositivo, exceto quando você sincroniza conteúdo selecionado com um dispositivo próximo confiável.",
+          "Album Box não tem servidor remoto e não transmite dados para nenhum servidor. Exceto durante a sincronização iniciada pelo usuário com permissões de Rede Local e dados sem fio, o app não precisa de acesso à rede.",
+          "O app não coleta IDFA, IDFV, localização, contatos, microfone, logs remotos de falha ou dados de rastreamento entre apps."
+        ],
+        sections: [
+          {
+            heading: "1. Introdução",
+            paragraphs: [
+              "Album Box respeita sua privacidade e foi criado para controle local. Esta política explica quais informações o app usa ou armazena, suas finalidades, onde ficam, se são compartilhadas e quais são seus direitos.",
+              "Ela se aplica ao Album Box em iOS, iPadOS e macOS e reflete o comportamento real do app e as informações declaradas no App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Informações usadas",
+            paragraphs: [
+              "Album Box acessa apenas fotos e vídeos que você importa ou exporta para gerenciar álbuns privados locais, reproduzir mídia, exportar itens escolhidos e sincronizar conteúdo selecionado por você.",
+              "A permissão Fotos é usada para importar e exportar mídias escolhidas. O app não escaneia toda a biblioteca em segundo plano.",
+              "A câmera é usada apenas para escanear códigos QR de pareamento em dispositivos confiáveis. Imagens da câmera não são enviadas.",
+              "Hashes de PIN ou padrão podem ser salvos no Keychain. Face ID e Touch ID são gerenciados pelo sistema Apple; Album Box não lê nem salva dados biométricos brutos.",
+              "Para sincronização criptografada, o app salva localmente um identificador gerado, nomes de dispositivos pareados, chaves públicas, registros confiáveis e manifestos temporários.",
+              "Configurações e registros locais permanecem no dispositivo. O app não coleta nome, e-mail, telefone, IDFA, IDFV, localização, contatos, microfone, pagamento, publicidade, analytics, falhas remotas ou logs IP de servidor."
+            ]
+          },
+          {
+            heading: "3. Finalidades",
+            paragraphs: [
+              "Os dados são usados apenas para importar, organizar, verificar acesso, exportar, encontrar dispositivos próximos confiáveis, transferir arquivos por sincronização criptografada, lembrar configurações e permitir exclusão.",
+              "Album Box não usa suas mídias ou identificadores para anúncios, perfilamento, rastreamento entre apps, treinamento de IA, análise de conteúdo ou venda."
+            ]
+          },
+          {
+            heading: "4. Terceiros e compartilhamento",
+            paragraphs: [
+              "Album Box não inclui SDKs de análise, anúncios, login social, pagamento, nuvem, relatórios remotos de falha ou serviços de IA de terceiros.",
+              "Não vendemos nem alugamos informações pessoais. Durante a sincronização, os dados escolhidos vão somente ao dispositivo próximo confirmado por você."
+            ]
+          },
+          {
+            heading: "5. Armazenamento e segurança",
+            paragraphs: [
+              "Os dados ficam localmente no sandbox do app. Credenciais, identificadores e chaves sensíveis são salvos no Keychain quando aplicável.",
+              "O app usa sandbox do sistema, Keychain, Data Protection, permissões do sistema e canais de sincronização criptografados com verificação de identidade.",
+              "Mídias e metadados permanecem até você excluir, limpar os dados do app ou desinstalar o app. Dados temporários de sincronização servem apenas ao fluxo ativo."
+            ]
+          },
+          {
+            heading: "6. Seus direitos",
+            paragraphs: [
+              "Você pode ver mídias, exportar arquivos escolhidos, renomear pastas, mover arquivos, mudar configurações locais e gerenciar dispositivos confiáveis.",
+              "Você pode revogar Fotos, Câmera, Rede Local e Face ID nos ajustes do sistema. Pode excluir itens, usar Ajustes > Limpar dados ou desinstalar o app.",
+              `Album Box não oferece criação de conta ou login; portanto não há conta de servidor para excluir. Para solicitações de privacidade, contate ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Crianças",
+            paragraphs: [
+              "Album Box não é direcionado a crianças menores de 13 anos e não coleta intencionalmente informações pessoais de crianças. Sem servidor de conta, nuvem, analytics ou anúncios, o app não transmite intencionalmente essas informações a servidores terceiros."
+            ]
+          },
+          {
+            heading: "8. Atualizações e contato",
+            paragraphs: [
+              "Se houver mudança relevante no tratamento de dados, atualizaremos esta política e as declarações necessárias na App Store.",
+              `Contato: ${CONTACT_EMAIL}. Meta de resposta: até 15 dias úteis após recebimento e verificação.`
+            ],
+          }
+        ]
+      },
+      nl: {
+        languageLabel: "Taal",
+        title: "Privacybeleid van Album Box",
+        meta: "Ingangsdatum: 7 juli 2026 · Laatst bijgewerkt: 22 juli 2026",
+        summaryTitle: "Privacy in het kort",
+        summary: [
+          "Album Box is een lokale kluis voor privé-albums, zonder accountserver, cloudopslag, advertentie-SDK of analyse-SDK van derden.",
+          "Geïmporteerde foto’s en video’s blijven op je apparaat, tenzij je geselecteerde inhoud synchroniseert met een vertrouwd apparaat in de buurt.",
+          "Album Box heeft geen externe server en verzendt geen gegevens naar servers. Behalve bij door jou gestarte synchronisatie met lokaal netwerk en draadloze data heeft de app geen netwerktoegang nodig.",
+          "De app verzamelt geen IDFA, IDFV, locatie, contacten, microfoondata, externe crashlogs of cross-app trackingdata."
+        ],
+        sections: [
+          {
+            heading: "1. Inleiding",
+            paragraphs: [
+              "Album Box respecteert je privacy en is ontworpen voor lokale controle. Dit beleid legt uit welke informatie de app gebruikt of bewaart, waarom, waar deze wordt opgeslagen, of deze wordt gedeeld en welke rechten je hebt.",
+              "Dit geldt voor Album Box op iOS, iPadOS en macOS en volgt het daadwerkelijke appgedrag en de privacyverklaring in App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Gebruikte informatie",
+            paragraphs: [
+              "Album Box gebruikt alleen foto’s en video’s die je importeert of exporteert voor lokale privé-albums, afspelen, export en door jou gekozen synchronisatie.",
+              "Foto’s-toestemming wordt gebruikt voor gekozen import en export. De app scant je hele bibliotheek niet op de achtergrond.",
+              "De camera wordt alleen gebruikt om koppelings-QR-codes op vertrouwde apparaten te scannen. Camerabeelden worden niet geüpload.",
+              "PIN- of patroonhashes kunnen in Keychain worden opgeslagen. Face ID en Touch ID worden door Apple verwerkt; Album Box leest of bewaart geen ruwe biometrie.",
+              "Voor versleutelde synchronisatie bewaart de app lokaal een apparaat-ID, gekoppelde apparaatnamen, publieke sleutels, vertrouwensrecords en tijdelijke manifesten.",
+              "Lokale instellingen en logboeken blijven op het apparaat. De app verzamelt geen naam, e-mail, telefoon, IDFA, IDFV, locatie, contacten, microfoon, betaling, advertenties, analytics, externe crashes of server-IP-logs."
+            ]
+          },
+          {
+            heading: "3. Doeleinden",
+            paragraphs: [
+              "Data wordt alleen gebruikt voor importeren, organiseren, toegang verifiëren, exporteren, vertrouwde apparaten vinden, versleuteld synchroniseren, instellingen onthouden en verwijderen mogelijk maken.",
+              "Album Box gebruikt media of identifiers niet voor advertenties, profilering, cross-app tracking, AI-training, inhoudsanalyse of verkoop."
+            ]
+          },
+          {
+            heading: "4. Derden en delen",
+            paragraphs: [
+              "Album Box bevat geen SDK’s voor analytics, advertenties, sociale login, betalingen, cloud, externe crashrapportage of AI-diensten van derden.",
+              "We verkopen of verhuren geen persoonsgegevens. Bij synchronisatie gaan gekozen gegevens alleen naar het door jou bevestigde apparaat in de buurt."
+            ]
+          },
+          {
+            heading: "5. Opslag en beveiliging",
+            paragraphs: [
+              "Gegevens worden lokaal in de app-sandbox opgeslagen. Gevoelige credentials, identifiers en sleutels worden waar passend in Keychain opgeslagen.",
+              "De app gebruikt systeemsandbox, Keychain, Data Protection, systeemtoestemmingen en versleutelde sync-kanalen met identiteitscontrole.",
+              "Media en metadata blijven tot je ze verwijdert, appdata wist of de app verwijdert. Tijdelijke syncdata wordt alleen gebruikt voor de actieve synchronisatie."
+            ]
+          },
+          {
+            heading: "6. Jouw rechten",
+            paragraphs: [
+              "Je kunt media bekijken, gekozen bestanden exporteren, mappen hernoemen, bestanden verplaatsen, lokale instellingen wijzigen en vertrouwde apparaten beheren.",
+              "Je kunt Foto’s, Camera, Lokaal netwerk en Face ID intrekken in de systeeminstellingen. Je kunt items verwijderen, Instellingen > Gegevens wissen gebruiken of de app verwijderen.",
+              `Album Box biedt geen account of login; er is dus geen serveraccount om te verwijderen. Voor privacyverzoeken: ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Kinderen",
+            paragraphs: [
+              "Album Box is niet gericht op kinderen jonger dan 13 jaar en verzamelt niet bewust hun persoonsgegevens. Zonder accountserver, cloud, analytics of advertenties stuurt de app deze gegevens niet bewust naar derden."
+            ]
+          },
+          {
+            heading: "8. Updates en contact",
+            paragraphs: [
+              "Bij wezenlijke wijzigingen in gegevensverwerking werken we dit beleid en de vereiste App Store-informatie bij.",
+              `Contact: ${CONTACT_EMAIL}. Reactiedoel: binnen 15 werkdagen na ontvangst en verificatie.`
+            ],
+          }
+        ]
+      },
+      sv: {
+        languageLabel: "Språk",
+        title: "Album Box integritetspolicy",
+        meta: "Gäller från: 7 juli 2026 · Senast uppdaterad: 22 juli 2026",
+        summaryTitle: "Integritet i korthet",
+        summary: [
+          "Album Box är ett lokalt privat albumvalv utan kontoserver, molnlagring, annons-SDK eller tredjepartsanalys.",
+          "Importerade foton och videor stannar på enheten om du inte synkar valt innehåll till en betrodd närliggande enhet.",
+          "Album Box har ingen fjärrserver och överför inga data till någon server. Förutom när du startar synk och aktiverar behörighet för lokalt nätverk och trådlösa data behöver appen ingen nätverksåtkomst.",
+          "Appen samlar inte in IDFA, IDFV, plats, kontakter, mikrofondata, fjärrkraschloggar eller spårning mellan appar."
+        ],
+        sections: [
+          {
+            heading: "1. Inledning",
+            paragraphs: [
+              "Album Box respekterar din integritet och bygger på lokal kontroll. Policyn förklarar vilken information appen använder eller sparar, varför, var den lagras, om den delas och vilka rättigheter du har.",
+              "Den gäller Album Box på iOS, iPadOS och macOS och speglar appens faktiska beteende och App Store Connect-deklarationen."
+            ]
+          },
+          {
+            heading: "2. Information som används",
+            paragraphs: [
+              "Album Box använder endast foton och videor du importerar eller exporterar för lokala privata album, uppspelning, export och vald synkronisering.",
+              "Fotoåtkomst används för valda importer och exporter. Appen skannar inte hela biblioteket i bakgrunden.",
+              "Kameran används bara för att skanna parkopplings-QR-koder på betrodda enheter. Kamerabilder laddas inte upp.",
+              "PIN- eller mönsterhashar kan sparas i Keychain. Face ID och Touch ID hanteras av Apple; Album Box läser eller sparar inte rå biometrisk data.",
+              "För krypterad synk sparas lokalt en enhetsidentifierare, parade enhetsnamn, publika nycklar, betrodda poster och tillfälliga manifest.",
+              "Lokala inställningar och loggar stannar på enheten. Appen samlar inte in namn, e-post, telefon, IDFA, IDFV, plats, kontakter, mikrofon, betalning, annonser, analys, fjärrkrascher eller server-IP-loggar."
+            ]
+          },
+          {
+            heading: "3. Ändamål",
+            paragraphs: [
+              "Data används endast för att importera, organisera, verifiera åtkomst, exportera, hitta betrodda enheter, synka krypterat, komma ihåg inställningar och möjliggöra radering.",
+              "Album Box använder inte media eller identifierare för annonser, profilering, spårning mellan appar, AI-träning, innehållsanalys eller försäljning."
+            ]
+          },
+          {
+            heading: "4. Tredje parter och delning",
+            paragraphs: [
+              "Album Box innehåller inga SDK:er för analys, annonser, social inloggning, betalning, moln, fjärrkraschrapportering eller tredjeparts-AI.",
+              "Vi säljer eller hyr inte ut personuppgifter. Vid synk skickas valda data endast till den närliggande enhet du bekräftar."
+            ]
+          },
+          {
+            heading: "5. Lagring och säkerhet",
+            paragraphs: [
+              "Data lagras lokalt i appens sandbox. Känsliga uppgifter, identifierare och nycklar lagras i Keychain när det är lämpligt.",
+              "Appen använder systemsandbox, Keychain, Data Protection, systembehörigheter och krypterade synkkanaler med identitetskontroll.",
+              "Media och metadata finns kvar tills du raderar dem, rensar appdata eller avinstallerar appen. Tillfällig synkdata används bara för aktiv synk."
+            ]
+          },
+          {
+            heading: "6. Dina rättigheter",
+            paragraphs: [
+              "Du kan visa media, exportera valda filer, byta namn på mappar, flytta filer, ändra lokala inställningar och hantera betrodda enheter.",
+              "Du kan återkalla Foton, Kamera, Lokalt nätverk och Face ID i systeminställningarna. Du kan radera objekt, använda Inställningar > Rensa data eller avinstallera appen.",
+              `Album Box har inget konto eller inloggning, så inget serverkonto behöver raderas. Kontakta ${CONTACT_EMAIL} för integritetsärenden.`
+            ]
+          },
+          {
+            heading: "7. Barn",
+            paragraphs: [
+              "Album Box riktar sig inte till barn under 13 år och samlar inte medvetet in barns personuppgifter. Utan kontoserver, moln, analys eller annonser överför appen inte avsiktligt sådana uppgifter till tredje part."
+            ]
+          },
+          {
+            heading: "8. Uppdateringar och kontakt",
+            paragraphs: [
+              "Vid väsentliga ändringar i databehandling uppdaterar vi policyn och nödvändig App Store-information.",
+              `Kontakt: ${CONTACT_EMAIL}. Svarsmål: inom 15 arbetsdagar efter mottagen och verifierad begäran.`
+            ],
+          }
+        ]
+      },
+      nb: {
+        languageLabel: "Språk",
+        title: "Personvernerklæring for Album Box",
+        meta: "Gjelder fra: 7. juli 2026 · Sist oppdatert: 22. juli 2026",
+        summaryTitle: "Personvern kort fortalt",
+        summary: [
+          "Album Box er et lokalt privat albumhvelv uten kontoserver, skylagring, annonse-SDK eller tredjepartsanalyse.",
+          "Importerte bilder og videoer blir på enheten med mindre du synkroniserer valgt innhold til en betrodd enhet i nærheten.",
+          "Album Box har ingen ekstern server og overfører ingen data til servere. Bortsett fra når du starter synkronisering og aktiverer lokalt nettverk og trådløse data, trenger appen ikke nettverkstilgang.",
+          "Appen samler ikke inn IDFA, IDFV, posisjon, kontakter, mikrofondata, eksterne krasjlogger eller sporing mellom apper."
+        ],
+        sections: [
+          {
+            heading: "1. Innledning",
+            paragraphs: [
+              "Album Box respekterer personvernet ditt og er laget for lokal kontroll. Erklæringen forklarer hvilken informasjon appen bruker eller lagrer, formålene, lagringssted, deling og rettighetene dine.",
+              "Den gjelder Album Box på iOS, iPadOS og macOS og gjenspeiler faktisk appatferd og App Store Connect-opplysninger."
+            ]
+          },
+          {
+            heading: "2. Informasjon som brukes",
+            paragraphs: [
+              "Album Box bruker bare bilder og videoer du importerer eller eksporterer for lokale private album, avspilling, eksport og valgt synkronisering.",
+              "Bilder-tillatelsen brukes for valgte importer og eksporter. Appen skanner ikke hele biblioteket i bakgrunnen.",
+              "Kameraet brukes bare til å skanne QR-koder for paring på betrodde enheter. Kamerabilder lastes ikke opp.",
+              "PIN- eller mønster-hasher kan lagres i Keychain. Face ID og Touch ID håndteres av Apple; Album Box leser eller lagrer ikke rå biometriske data.",
+              "For kryptert synk lagres lokalt en enhets-ID, parede enhetsnavn, offentlige nøkler, tillitsposter og midlertidige manifester.",
+              "Lokale innstillinger og logger blir på enheten. Appen samler ikke inn navn, e-post, telefon, IDFA, IDFV, posisjon, kontakter, mikrofon, betaling, annonser, analyse, eksterne krasj eller server-IP-logger."
+            ]
+          },
+          {
+            heading: "3. Formål",
+            paragraphs: [
+              "Data brukes bare til å importere, organisere, verifisere tilgang, eksportere, finne betrodde enheter, synkronisere kryptert, huske innstillinger og muliggjøre sletting.",
+              "Album Box bruker ikke medier eller identifikatorer til annonser, profilering, sporing mellom apper, AI-trening, innholdsanalyse eller salg."
+            ]
+          },
+          {
+            heading: "4. Tredjeparter og deling",
+            paragraphs: [
+              "Album Box inneholder ingen SDK-er for analyse, annonser, sosial innlogging, betaling, sky, eksterne krasjrapporter eller tredjeparts-AI.",
+              "Vi selger eller leier ikke ut personopplysninger. Ved synk sendes valgte data bare til den nærliggende enheten du bekrefter."
+            ]
+          },
+          {
+            heading: "5. Lagring og sikkerhet",
+            paragraphs: [
+              "Data lagres lokalt i appens sandkasse. Sensitive opplysninger, identifikatorer og nøkler lagres i Keychain der det passer.",
+              "Appen bruker systemsandkasse, Keychain, Data Protection, systemtillatelser og krypterte synkkanaler med identitetssjekk.",
+              "Medier og metadata beholdes til du sletter dem, tømmer appdata eller avinstallerer appen. Midlertidige synkdata brukes bare for aktiv synk."
+            ]
+          },
+          {
+            heading: "6. Dine rettigheter",
+            paragraphs: [
+              "Du kan vise medier, eksportere valgte filer, endre mappenavn, flytte filer, endre lokale innstillinger og administrere betrodde enheter.",
+              "Du kan trekke tilbake Bilder, Kamera, Lokalt nettverk og Face ID i systeminnstillinger. Du kan slette elementer, bruke Innstillinger > Tøm data eller avinstallere appen.",
+              `Album Box har ingen konto eller innlogging, så det finnes ingen serverkonto å slette. Kontakt ${CONTACT_EMAIL} for personvernforespørsler.`
+            ]
+          },
+          {
+            heading: "7. Barn",
+            paragraphs: [
+              "Album Box er ikke rettet mot barn under 13 år og samler ikke bevisst inn barns personopplysninger. Uten kontoserver, sky, analyse eller annonser overfører appen ikke slike data med hensikt til tredjepartsservere."
+            ]
+          },
+          {
+            heading: "8. Oppdateringer og kontakt",
+            paragraphs: [
+              "Ved vesentlige endringer i databehandling oppdaterer vi erklæringen og nødvendige App Store-opplysninger.",
+              `Kontakt: ${CONTACT_EMAIL}. Svarmål: innen 15 virkedager etter mottak og verifisering.`
+            ],
+          }
+        ]
+      },
+      da: {
+        languageLabel: "Sprog",
+        title: "Album Box privatlivspolitik",
+        meta: "Ikrafttrædelsesdato: 7. juli 2026 · Senest opdateret: 22. juli 2026",
+        summaryTitle: "Privatliv kort fortalt",
+        summary: [
+          "Album Box er en lokal privat albumboks uden kontoserver, cloudlager, annonce-SDK eller tredjepartsanalyse.",
+          "Importerede fotos og videoer bliver på enheden, medmindre du synkroniserer valgt indhold til en betroet enhed i nærheden.",
+          "Album Box har ingen fjernserver og overfører ingen data til nogen server. Bortset fra synk, som du starter med tilladelser til lokalt netværk og trådløse data, behøver appen ikke netværksadgang.",
+          "Appen indsamler ikke IDFA, IDFV, placering, kontakter, mikrofondata, fjernkraschlogs eller sporing på tværs af apps."
+        ],
+        sections: [
+          {
+            heading: "1. Introduktion",
+            paragraphs: [
+              "Album Box respekterer dit privatliv og er bygget til lokal kontrol. Politikken forklarer, hvilke oplysninger appen bruger eller gemmer, hvorfor, hvor de lagres, om de deles, og hvilke rettigheder du har.",
+              "Den gælder Album Box på iOS, iPadOS og macOS og afspejler appens faktiske adfærd og App Store Connect-oplysninger."
+            ]
+          },
+          {
+            heading: "2. Oplysninger der bruges",
+            paragraphs: [
+              "Album Box bruger kun fotos og videoer, du importerer eller eksporterer, til lokale private album, afspilning, eksport og valgt synkronisering.",
+              "Fotos-tilladelse bruges til valgte importer og eksporter. Appen scanner ikke hele biblioteket i baggrunden.",
+              "Kameraet bruges kun til at scanne parrings-QR-koder på betroede enheder. Kamerabilleder uploades ikke.",
+              "PIN- eller mønster-hashes kan gemmes i Keychain. Face ID og Touch ID håndteres af Apple; Album Box læser eller gemmer ikke rå biometriske data.",
+              "Til krypteret synk gemmer appen lokalt et enheds-id, parrede enhedsnavne, offentlige nøgler, tillidsposter og midlertidige manifester.",
+              "Lokale indstillinger og logs bliver på enheden. Appen indsamler ikke navn, e-mail, telefon, IDFA, IDFV, placering, kontakter, mikrofon, betaling, annoncer, analyse, fjernkrasch eller server-IP-logs."
+            ]
+          },
+          {
+            heading: "3. Formål",
+            paragraphs: [
+              "Data bruges kun til import, organisering, adgangsverifikation, eksport, at finde betroede enheder, krypteret synk, lokale indstillinger og sletning.",
+              "Album Box bruger ikke medier eller identifikatorer til annoncer, profilering, sporing på tværs af apps, AI-træning, indholdsanalyse eller salg."
+            ]
+          },
+          {
+            heading: "4. Tredjeparter og deling",
+            paragraphs: [
+              "Album Box indeholder ingen SDK'er til analyse, annoncer, social login, betaling, cloud, fjernkraschrapportering eller tredjeparts-AI.",
+              "Vi sælger eller udlejer ikke personoplysninger. Ved synk sendes valgte data kun til den nærliggende enhed, du bekræfter."
+            ]
+          },
+          {
+            heading: "5. Lagring og sikkerhed",
+            paragraphs: [
+              "Data lagres lokalt i appens sandbox. Følsomme legitimationsoplysninger, id'er og nøgler gemmes i Keychain, hvor det er relevant.",
+              "Appen bruger systemsandbox, Keychain, Data Protection, systemtilladelser og krypterede synkkanaler med identitetskontrol.",
+              "Medier og metadata beholdes, indtil du sletter dem, rydder appdata eller afinstallerer appen. Midlertidige synkdata bruges kun til aktiv synk."
+            ]
+          },
+          {
+            heading: "6. Dine rettigheder",
+            paragraphs: [
+              "Du kan se medier, eksportere valgte filer, omdøbe mapper, flytte filer, ændre lokale indstillinger og administrere betroede enheder.",
+              "Du kan tilbagekalde Fotos, Kamera, Lokalt netværk og Face ID i systemindstillinger. Du kan slette elementer, bruge Indstillinger > Ryd data eller afinstallere appen.",
+              `Album Box har ingen konto eller login, så der er ingen serverkonto at slette. Kontakt ${CONTACT_EMAIL} ved privatlivsanmodninger.`
+            ]
+          },
+          {
+            heading: "7. Børn",
+            paragraphs: [
+              "Album Box er ikke rettet mod børn under 13 år og indsamler ikke bevidst børns personoplysninger. Uden kontoserver, cloud, analyse eller annoncer overfører appen ikke med vilje sådanne oplysninger til tredjeparter."
+            ]
+          },
+          {
+            heading: "8. Opdateringer og kontakt",
+            paragraphs: [
+              "Ved væsentlige ændringer i databehandling opdaterer vi politikken og nødvendige App Store-oplysninger.",
+              `Kontakt: ${CONTACT_EMAIL}. Svarmål: inden for 15 arbejdsdage efter modtagelse og verifikation.`
+            ],
+          }
+        ]
+      },
+      ja: {
+        languageLabel: "言語",
+        title: "Album Box プライバシーポリシー",
+        meta: "施行日：2026年7月7日 · 最終更新日：2026年7月22日",
+        summaryTitle: "プライバシー概要",
+        summary: [
+          "Album Box はローカルのプライベートアルバム保管アプリであり、アカウントサーバー、クラウド保存、広告 SDK、第三者分析 SDK はありません。",
+          "読み込んだ写真と動画は、選択した内容を信頼済みの近くのデバイスへ同期する場合を除き、端末内に保持されます。",
+          "Album Box にはリモートサーバーがなく、いかなるデータもサーバーへ送信しません。ユーザーが同期を開始し、ローカルネットワークと無線データ通信の権限を有効にする場合を除き、ネットワークアクセスは不要です。",
+          "本アプリは IDFA、IDFV、位置情報、連絡先、マイクデータ、リモートクラッシュログ、アプリ横断追跡データを収集しません。"
+        ],
+        sections: [
+          {
+            heading: "1. はじめに",
+            paragraphs: [
+              "Album Box はプライバシーを尊重し、ローカル管理を前提に設計されています。本ポリシーでは、アプリが利用または保存する情報、目的、保存場所、共有の有無、安全対策、ユーザーの権利を説明します。",
+              "本ポリシーは iOS、iPadOS、macOS 版 Album Box に適用され、実際のアプリ動作および App Store Connect のプライバシー申告と一致する内容です。"
+            ]
+          },
+          {
+            heading: "2. 利用する情報",
+            paragraphs: [
+              "Album Box は、ユーザーが読み込みまたは書き出す写真と動画のみを使用し、ローカルの私的アルバム管理、再生、選択項目の書き出し、ユーザーが選んだ同期に利用します。",
+              "写真権限は、選択したメディアの読み込みと書き出しに使われます。アプリがバックグラウンドで写真ライブラリ全体をスキャンすることはありません。",
+              "カメラは信頼済みデバイスに表示されたペアリング QR コードの読み取りにのみ使用します。カメラ画像はアップロードされません。",
+              "PIN またはパターンのハッシュは Keychain に保存される場合があります。Face ID / Touch ID は Apple のシステムが処理し、Album Box は生体情報の原データを読み取りまたは保存しません。",
+              "暗号化同期のため、アプリ生成のデバイス識別子、ペアリング済みデバイス名、公開鍵、信頼記録、一時的な転送マニフェストをローカルに保存します。",
+              "ローカル設定と操作記録は端末内に残ります。本アプリは氏名、メール、電話番号、IDFA、IDFV、位置情報、連絡先、マイク、決済、広告、分析、リモートクラッシュ、サーバー IP ログを収集しません。"
+            ]
+          },
+          {
+            heading: "3. 利用目的",
+            paragraphs: [
+              "情報は、メディアの読み込み、整理、アクセス確認、書き出し、信頼済みデバイスの検出、暗号化同期、設定保存、削除機能のためにのみ使用されます。",
+              "Album Box はメディアや識別子を広告、プロファイリング、アプリ横断追跡、AI 学習、内容分析、販売に使用しません。"
+            ]
+          },
+          {
+            heading: "4. 第三者サービスと共有",
+            paragraphs: [
+              "Album Box には分析、広告、ソーシャルログイン、決済、クラウド、リモートクラッシュ報告、第三者 AI サービスの SDK は含まれていません。",
+              "個人情報を販売、貸与、取引することはありません。同期時、選択されたデータはユーザーが確認した近くのデバイスにのみ送信されます。"
+            ]
+          },
+          {
+            heading: "5. 保存、セキュリティ、保持",
+            paragraphs: [
+              "データはアプリのサンドボックスにローカル保存されます。機密性のある認証情報、識別子、鍵は必要に応じて Keychain に保存されます。",
+              "アプリはシステムサンドボックス、Keychain、Data Protection、システム権限、本人確認付き暗号化同期チャネルを使用します。",
+              "メディアとメタデータは、削除、アプリデータ消去、アンインストールまで保持されます。一時同期データは進行中の同期にのみ使用されます。"
+            ]
+          },
+          {
+            heading: "6. ユーザーの権利",
+            paragraphs: [
+              "ユーザーはメディアの表示、選択ファイルの書き出し、フォルダ名変更、ファイル移動、ローカル設定変更、信頼済みデバイス管理ができます。",
+              "写真、カメラ、ローカルネットワーク、Face ID の権限はシステム設定で取り消せます。項目削除、設定 > データ消去、アプリ削除も可能です。",
+              `Album Box はアカウント作成やログインを提供していないため、削除すべきサーバーアカウントはありません。プライバシー請求は ${CONTACT_EMAIL} までご連絡ください。`
+            ]
+          },
+          {
+            heading: "7. 子どものプライバシー",
+            paragraphs: [
+              "Album Box は 13 歳未満の子どもを対象としておらず、子どもの個人情報を故意に収集しません。アカウントサーバー、クラウド、分析、広告がないため、そのような情報を第三者サーバーへ意図的に送信しません。"
+            ]
+          },
+          {
+            heading: "8. 更新と連絡先",
+            paragraphs: [
+              "データ処理に重要な変更がある場合、本ポリシーおよび必要な App Store 表示を更新します。",
+              `連絡先：${CONTACT_EMAIL}。回答目標：請求を受領し確認してから 15 営業日以内。`
+            ],
+          }
+        ]
+      },
+      ko: {
+        languageLabel: "언어",
+        title: "Album Box 개인정보 처리방침",
+        meta: "시행일: 2026년 7월 7일 · 마지막 업데이트: 2026년 7월 22일",
+        summaryTitle: "개인정보 요약",
+        summary: [
+          "Album Box는 로컬 개인 앨범 보관 앱이며 계정 서버, 클라우드 저장소, 광고 SDK, 제3자 분석 SDK가 없습니다.",
+          "가져온 사진과 동영상은 사용자가 선택한 신뢰 기기로 동기화하지 않는 한 기기에만 보관됩니다.",
+          "Album Box에는 원격 서버가 없으며 어떤 데이터도 서버로 전송하지 않습니다. 사용자가 동기화를 시작하고 로컬 네트워크 및 무선 데이터 권한을 켜는 경우를 제외하면 네트워크 접근이 필요하지 않습니다.",
+          "앱은 IDFA, IDFV, 위치, 연락처, 마이크 데이터, 원격 충돌 로그, 앱 간 추적 데이터를 수집하지 않습니다."
+        ],
+        sections: [
+          {
+            heading: "1. 소개",
+            paragraphs: [
+              "Album Box는 사용자의 개인정보를 존중하며 로컬 제어를 중심으로 설계되었습니다. 이 방침은 앱이 사용하는 정보, 목적, 저장 위치, 공유 여부, 보안 조치와 권리를 설명합니다.",
+              "이 방침은 iOS, iPadOS, macOS의 Album Box에 적용되며 실제 앱 동작과 App Store Connect 개인정보 고지에 맞춰 작성되었습니다."
+            ]
+          },
+          {
+            heading: "2. 사용하는 정보",
+            paragraphs: [
+              "Album Box는 사용자가 가져오거나 내보내는 사진과 동영상만 사용하여 로컬 개인 앨범 관리, 재생, 선택 항목 내보내기, 사용자가 선택한 동기화를 수행합니다.",
+              "사진 권한은 선택한 미디어 가져오기와 내보내기에 사용됩니다. 앱은 백그라운드에서 전체 사진 보관함을 스캔하지 않습니다.",
+              "카메라는 신뢰 기기에 표시된 페어링 QR 코드 스캔에만 사용됩니다. 카메라 영상은 업로드되지 않습니다.",
+              "PIN 또는 패턴 해시는 Keychain에 저장될 수 있습니다. Face ID와 Touch ID는 Apple 시스템이 처리하며 Album Box는 원본 생체 데이터를 읽거나 저장하지 않습니다.",
+              "암호화 동기화를 위해 앱 생성 기기 식별자, 페어링된 기기 이름, 공개키, 신뢰 기록, 임시 전송 manifest가 로컬에 저장됩니다.",
+              "로컬 설정과 작업 기록은 기기에 남습니다. 앱은 이름, 이메일, 전화번호, IDFA, IDFV, 위치, 연락처, 마이크, 결제, 광고, 분석, 원격 충돌, 서버 IP 로그를 수집하지 않습니다."
+            ]
+          },
+          {
+            heading: "3. 사용 목적",
+            paragraphs: [
+              "데이터는 미디어 가져오기, 정리, 접근 확인, 내보내기, 신뢰 기기 검색, 암호화 동기화, 설정 저장, 삭제 기능 제공에만 사용됩니다.",
+              "Album Box는 미디어나 식별자를 광고, 프로파일링, 앱 간 추적, AI 학습, 콘텐츠 분석 또는 판매에 사용하지 않습니다."
+            ]
+          },
+          {
+            heading: "4. 제3자 및 공유",
+            paragraphs: [
+              "Album Box에는 분석, 광고, 소셜 로그인, 결제, 클라우드, 원격 충돌 보고, 제3자 AI 서비스 SDK가 포함되어 있지 않습니다.",
+              "개인정보를 판매하거나 임대하지 않습니다. 동기화 시 선택한 데이터는 사용자가 확인한 가까운 기기로만 전송됩니다."
+            ]
+          },
+          {
+            heading: "5. 저장 및 보안",
+            paragraphs: [
+              "데이터는 앱 sandbox에 로컬 저장됩니다. 민감한 자격 증명, 식별자와 키는 필요한 경우 Keychain에 저장됩니다.",
+              "앱은 시스템 sandbox, Keychain, Data Protection, 시스템 권한, 신원 확인이 포함된 암호화 동기화 채널을 사용합니다.",
+              "미디어와 메타데이터는 삭제, 앱 데이터 지우기 또는 앱 제거 전까지 보관됩니다. 임시 동기화 데이터는 활성 동기화에만 사용됩니다."
+            ]
+          },
+          {
+            heading: "6. 사용자 권리",
+            paragraphs: [
+              "사용자는 미디어 보기, 선택 파일 내보내기, 폴더 이름 변경, 파일 이동, 로컬 설정 변경, 신뢰 기기 관리를 할 수 있습니다.",
+              "사진, 카메라, 로컬 네트워크, Face ID 권한은 시스템 설정에서 철회할 수 있습니다. 항목 삭제, 설정 > 데이터 지우기 또는 앱 제거도 가능합니다.",
+              `Album Box는 계정 생성이나 로그인을 제공하지 않으므로 삭제할 서버 계정이 없습니다. 개인정보 요청은 ${CONTACT_EMAIL}로 문의하세요.`
+            ]
+          },
+          {
+            heading: "7. 아동 개인정보",
+            paragraphs: [
+              "Album Box는 만 13세 미만 아동을 대상으로 하지 않으며 아동 개인정보를 고의로 수집하지 않습니다. 계정 서버, 클라우드, 분석 또는 광고가 없으므로 그러한 정보를 제3자 서버로 의도적으로 전송하지 않습니다."
+            ]
+          },
+          {
+            heading: "8. 업데이트 및 연락처",
+            paragraphs: [
+              "데이터 처리에 중대한 변경이 있으면 이 방침과 필요한 App Store 고지를 업데이트합니다.",
+              `연락처: ${CONTACT_EMAIL}. 응답 목표: 요청 수신 및 확인 후 영업일 기준 15일 이내.`
+            ],
+          }
+        ]
+      },
+      ar: {
+        languageLabel: "اللغة",
+        title: "سياسة خصوصية Album Box",
+        meta: "تاريخ السريان: 7 يوليو 2026 · آخر تحديث: 22 يوليو 2026",
+        summaryTitle: "الخصوصية باختصار",
+        summary: [
+          "Album Box خزنة ألبومات خاصة محلية بلا خادم حسابات أو تخزين سحابي أو SDK إعلانات أو SDK تحليلات تابع لطرف ثالث.",
+          "تبقى الصور ومقاطع الفيديو المستوردة على جهازك ما لم تختر مزامنة محتوى محدد مع جهاز قريب موثوق.",
+          "لا يملك Album Box خادمًا بعيدًا ولا ينقل أي بيانات إلى أي خادم. وباستثناء المزامنة التي يبدأها المستخدم مع أذونات الشبكة المحلية والبيانات اللاسلكية، لا يحتاج التطبيق إلى الوصول إلى الشبكة.",
+          "لا يجمع التطبيق IDFA أو IDFV أو الموقع أو جهات الاتصال أو بيانات الميكروفون أو سجلات الأعطال البعيدة أو بيانات التتبع بين التطبيقات."
+        ],
+        sections: [
+          {
+            heading: "1. المقدمة",
+            paragraphs: [
+              "يحترم Album Box خصوصيتك وهو مصمم للتحكم المحلي. توضح هذه السياسة المعلومات التي يستخدمها التطبيق أو يخزنها، والغرض منها، ومكان تخزينها، وما إذا كانت تتم مشاركتها، وحقوقك.",
+              "تنطبق هذه السياسة على Album Box على iOS و iPadOS و macOS وتعكس سلوك التطبيق الفعلي وإفصاحات الخصوصية في App Store Connect."
+            ]
+          },
+          {
+            heading: "2. المعلومات المستخدمة",
+            paragraphs: [
+              "لا يصل Album Box إلا إلى الصور ومقاطع الفيديو التي تستوردها أو تصدرها لإدارة الألبومات الخاصة محليًا وتشغيل الوسائط وتصدير العناصر المختارة والمزامنة التي تبدأها.",
+              "يستخدم إذن الصور لاستيراد وتصدير الوسائط التي تختارها. لا يفحص التطبيق مكتبة الصور بالكامل في الخلفية.",
+              "تستخدم الكاميرا فقط لمسح رموز QR الخاصة بالاقتران على الأجهزة الموثوقة. لا يتم رفع صور الكاميرا.",
+              "قد يتم حفظ تجزئات PIN أو النمط في Keychain. تتم معالجة Face ID و Touch ID بواسطة نظام Apple، ولا يقرأ Album Box البيانات الحيوية الخام أو يخزنها.",
+              "للمزامنة المشفرة، يخزن التطبيق محليًا معرف جهاز مولدًا وأسماء الأجهزة المقترنة والمفاتيح العامة وسجلات الثقة وبيانات نقل مؤقتة.",
+              "تبقى الإعدادات والسجلات المحلية على الجهاز. لا يجمع التطبيق الاسم أو البريد أو الهاتف أو IDFA أو IDFV أو الموقع أو جهات الاتصال أو الميكروفون أو الدفع أو الإعلان أو التحليلات أو الأعطال البعيدة أو سجلات IP للخادم."
+            ]
+          },
+          {
+            heading: "3. الأغراض",
+            paragraphs: [
+              "تستخدم البيانات فقط للاستيراد والتنظيم والتحقق من الوصول والتصدير والعثور على الأجهزة الموثوقة والمزامنة المشفرة وتذكر الإعدادات وتمكين الحذف.",
+              "لا يستخدم Album Box الوسائط أو المعرفات للإعلانات أو إنشاء الملفات الشخصية أو التتبع بين التطبيقات أو تدريب الذكاء الاصطناعي أو تحليل المحتوى أو البيع."
+            ]
+          },
+          {
+            heading: "4. الأطراف الثالثة والمشاركة",
+            paragraphs: [
+              "لا يحتوي Album Box على SDK للتحليلات أو الإعلانات أو تسجيل الدخول الاجتماعي أو الدفع أو السحابة أو تقارير الأعطال البعيدة أو خدمات ذكاء اصطناعي لطرف ثالث.",
+              "لا نبيع أو نؤجر المعلومات الشخصية. عند المزامنة، تنتقل البيانات المختارة فقط إلى الجهاز القريب الذي تؤكده."
+            ]
+          },
+          {
+            heading: "5. التخزين والأمان",
+            paragraphs: [
+              "تخزن البيانات محليًا في صندوق حماية التطبيق. تحفظ بيانات الاعتماد والمعرفات والمفاتيح الحساسة في Keychain عند الحاجة.",
+              "يستخدم التطبيق صندوق حماية النظام و Keychain و Data Protection وأذونات النظام وقنوات مزامنة مشفرة مع التحقق من الهوية.",
+              "تبقى الوسائط والبيانات الوصفية حتى تحذفها أو تمسح بيانات التطبيق أو تزيل التطبيق. تستخدم بيانات المزامنة المؤقتة للمزامنة النشطة فقط."
+            ]
+          },
+          {
+            heading: "6. حقوقك",
+            paragraphs: [
+              "يمكنك عرض الوسائط وتصدير الملفات المختارة وإعادة تسمية المجلدات ونقل الملفات وتغيير الإعدادات المحلية وإدارة الأجهزة الموثوقة.",
+              "يمكنك سحب أذونات الصور والكاميرا والشبكة المحلية و Face ID من إعدادات النظام. يمكنك حذف العناصر أو استخدام الإعدادات > مسح البيانات أو إزالة التطبيق.",
+              `لا يوفر Album Box إنشاء حساب أو تسجيل دخول، لذلك لا يوجد حساب خادم لحذفه. لطلبات الخصوصية، اتصل بـ ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. خصوصية الأطفال",
+            paragraphs: [
+              "لا يستهدف Album Box الأطفال دون 13 عامًا ولا يجمع عمدًا معلوماتهم الشخصية. وبلا خادم حساب أو سحابة أو تحليلات أو إعلانات، لا ينقل التطبيق هذه المعلومات عمدًا إلى خوادم طرف ثالث."
+            ]
+          },
+          {
+            heading: "8. التحديثات والتواصل",
+            paragraphs: [
+              "إذا حدث تغيير جوهري في معالجة البيانات، فسنحدث هذه السياسة وإفصاحات App Store المطلوبة.",
+              `التواصل: ${CONTACT_EMAIL}. هدف الرد: خلال 15 يوم عمل بعد استلام الطلب والتحقق منه.`
+            ],
+          }
+        ]
+      },
+      he: {
+        languageLabel: "שפה",
+        title: "מדיניות הפרטיות של Album Box",
+        meta: "תאריך תחולה: 7 ביולי 2026 · עודכן לאחרונה: 22 ביולי 2026",
+        summaryTitle: "פרטיות בקצרה",
+        summary: [
+          "Album Box היא כספת אלבומים פרטית מקומית ללא שרת חשבונות, אחסון ענן, SDK לפרסום או SDK אנליטיקה צד שלישי.",
+          "תמונות וסרטונים מיובאים נשארים במכשיר אלא אם בחרת לסנכרן תוכן נבחר למכשיר קרוב ומהימן.",
+          "ל-Album Box אין שרת מרוחק והיא אינה מעבירה נתונים לשרת כלשהו. למעט סנכרון ביוזמת המשתמש עם הרשאות רשת מקומית ונתונים אלחוטיים, האפליקציה אינה זקוקה לגישה לרשת.",
+          "האפליקציה אינה אוספת IDFA, IDFV, מיקום, אנשי קשר, נתוני מיקרופון, יומני קריסה מרוחקים או נתוני מעקב בין אפליקציות."
+        ],
+        sections: [
+          {
+            heading: "1. מבוא",
+            paragraphs: [
+              "Album Box מכבדת את פרטיותך ומיועדת לשליטה מקומית. מדיניות זו מסבירה אילו נתונים האפליקציה משתמשת או שומרת, לאיזו מטרה, היכן הם נשמרים, האם הם משותפים ומהן זכויותיך.",
+              "היא חלה על Album Box ב-iOS, iPadOS ו-macOS ומשקפת את התנהגות האפליקציה בפועל ואת הצהרת הפרטיות ב-App Store Connect."
+            ]
+          },
+          {
+            heading: "2. מידע בשימוש",
+            paragraphs: [
+              "Album Box ניגשת רק לתמונות ולסרטונים שאתה מייבא או מייצא לצורך ניהול אלבומים פרטיים מקומיים, ניגון, ייצוא וסנכרון שבחרת.",
+              "הרשאת תמונות משמשת לייבוא וייצוא מדיה שנבחרה. האפליקציה אינה סורקת את כל הספרייה ברקע.",
+              "המצלמה משמשת רק לסריקת קודי QR לשיוך במכשירים מהימנים. תמונות מצלמה אינן מועלות.",
+              "גיבובי PIN או תבנית עשויים להישמר ב-Keychain. Face ID ו-Touch ID מטופלים על ידי Apple; Album Box אינה קוראת או שומרת נתונים ביומטריים גולמיים.",
+              "לסנכרון מוצפן, האפליקציה שומרת מקומית מזהה מכשיר שנוצר, שמות מכשירים משויכים, מפתחות ציבוריים, רשומות אמון ומניפסטים זמניים.",
+              "הגדרות ויומנים מקומיים נשארים במכשיר. האפליקציה אינה אוספת שם, דוא״ל, טלפון, IDFA, IDFV, מיקום, אנשי קשר, מיקרופון, תשלום, פרסום, אנליטיקה, קריסות מרוחקות או יומני IP שרת."
+            ]
+          },
+          {
+            heading: "3. מטרות",
+            paragraphs: [
+              "הנתונים משמשים רק לייבוא, ארגון, אימות גישה, ייצוא, מציאת מכשירים מהימנים, סנכרון מוצפן, שמירת הגדרות ואפשרות מחיקה.",
+              "Album Box אינה משתמשת במדיה או במזהים לפרסום, פרופילינג, מעקב בין אפליקציות, אימון AI, ניתוח תוכן או מכירה."
+            ]
+          },
+          {
+            heading: "4. צדדים שלישיים ושיתוף",
+            paragraphs: [
+              "Album Box אינה כוללת SDK לניתוח, פרסום, התחברות חברתית, תשלום, ענן, דיווח קריסות מרחוק או שירותי AI צד שלישי.",
+              "איננו מוכרים או משכירים מידע אישי. בסנכרון, הנתונים שנבחרו מועברים רק למכשיר הקרוב שאישרת."
+            ]
+          },
+          {
+            heading: "5. אחסון ואבטחה",
+            paragraphs: [
+              "הנתונים נשמרים מקומית בסנדבוקס של האפליקציה. אישורים, מזהים ומפתחות רגישים נשמרים ב-Keychain כאשר מתאים.",
+              "האפליקציה משתמשת בסנדבוקס מערכת, Keychain, Data Protection, הרשאות מערכת וערוצי סנכרון מוצפנים עם בדיקת זהות.",
+              "מדיה ומטא-נתונים נשמרים עד למחיקה, ניקוי נתוני האפליקציה או הסרת האפליקציה. נתוני סנכרון זמניים משמשים רק לסנכרון פעיל."
+            ]
+          },
+          {
+            heading: "6. הזכויות שלך",
+            paragraphs: [
+              "ניתן לצפות במדיה, לייצא קבצים שנבחרו, לשנות שמות תיקיות, להעביר קבצים, לשנות הגדרות מקומיות ולנהל מכשירים מהימנים.",
+              "ניתן לבטל הרשאות תמונות, מצלמה, רשת מקומית ו-Face ID בהגדרות המערכת. ניתן למחוק פריטים, להשתמש בהגדרות > ניקוי נתונים או להסיר את האפליקציה.",
+              `Album Box אינה מציעה יצירת חשבון או התחברות, ולכן אין חשבון שרת למחיקה. לבקשות פרטיות: ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. פרטיות ילדים",
+            paragraphs: [
+              "Album Box אינה מיועדת לילדים מתחת לגיל 13 ואינה אוספת ביודעין מידע אישי של ילדים. ללא שרת חשבון, ענן, אנליטיקה או פרסום, האפליקציה אינה מעבירה ביודעין מידע כזה לשרתי צד שלישי."
+            ]
+          },
+          {
+            heading: "8. עדכונים ויצירת קשר",
+            paragraphs: [
+              "אם יחול שינוי מהותי בעיבוד הנתונים, נעדכן מדיניות זו ואת הצהרות App Store הנדרשות.",
+              `יצירת קשר: ${CONTACT_EMAIL}. יעד מענה: בתוך 15 ימי עסקים לאחר קבלה ואימות.`
+            ],
+          }
+        ]
+      },
+      hi: {
+        languageLabel: "भाषा",
+        title: "Album Box गोपनीयता नीति",
+        meta: "प्रभावी तिथि: 7 जुलाई 2026 · अंतिम अपडेट: 22 जुलाई 2026",
+        summaryTitle: "गोपनीयता सारांश",
+        summary: [
+          "Album Box एक स्थानीय निजी एल्बम वॉल्ट है; इसमें अकाउंट सर्वर, क्लाउड स्टोरेज, विज्ञापन SDK या थर्ड-पार्टी एनालिटिक्स SDK नहीं है।",
+          "आयात किए गए फोटो और वीडियो आपके डिवाइस पर रहते हैं, जब तक आप चुनी हुई सामग्री को भरोसेमंद पास के डिवाइस से सिंक न करें।",
+          "Album Box में कोई remote server नहीं है और यह कोई भी data किसी server को transmit नहीं करता। User-initiated sync में Local Network और wireless data permissions चालू करने के अलावा ऐप को network access की आवश्यकता नहीं होती।",
+          "ऐप IDFA, IDFV, लोकेशन, कॉन्टैक्ट, माइक्रोफोन डेटा, रिमोट क्रैश लॉग या क्रॉस-ऐप ट्रैकिंग डेटा एकत्र नहीं करता।"
+        ],
+        sections: [
+          {
+            heading: "1. परिचय",
+            paragraphs: [
+              "Album Box आपकी गोपनीयता का सम्मान करता है और स्थानीय नियंत्रण के लिए बनाया गया है। यह नीति बताती है कि ऐप कौन-सी जानकारी उपयोग या संग्रहित करता है, क्यों, कहाँ, क्या साझा होती है और आपके अधिकार क्या हैं।",
+              "यह iOS, iPadOS और macOS पर Album Box पर लागू है और ऐप के वास्तविक व्यवहार तथा App Store Connect में घोषित जानकारी से मेल खाती है।"
+            ]
+          },
+          {
+            heading: "2. उपयोग की जाने वाली जानकारी",
+            paragraphs: [
+              "Album Box केवल आपके आयात या निर्यात किए गए फोटो और वीडियो का उपयोग स्थानीय निजी एल्बम, प्लेबैक, निर्यात और आपके चुने सिंक के लिए करता है।",
+              "Photos अनुमति चुने गए मीडिया को आयात और निर्यात करने के लिए है। ऐप पृष्ठभूमि में पूरी लाइब्रेरी स्कैन नहीं करता।",
+              "कैमरा केवल भरोसेमंद डिवाइस पर दिखाए गए pairing QR code को स्कैन करने के लिए है। कैमरा चित्र अपलोड नहीं होते।",
+              "PIN या पैटर्न hash Keychain में सहेजे जा सकते हैं। Face ID और Touch ID Apple सिस्टम संभालता है; Album Box कच्चा biometric data नहीं पढ़ता या सहेजता।",
+              "Encrypted sync के लिए ऐप स्थानीय रूप से generated device identifier, paired device names, public keys, trusted records और temporary manifests सहेजता है।",
+              "स्थानीय settings और logs डिवाइस पर रहते हैं। ऐप नाम, ईमेल, फोन, IDFA, IDFV, लोकेशन, कॉन्टैक्ट, माइक्रोफोन, भुगतान, विज्ञापन, analytics, remote crashes या server IP logs नहीं जुटाता।"
+            ]
+          },
+          {
+            heading: "3. उद्देश्य",
+            paragraphs: [
+              "डेटा केवल import, organization, access verification, export, trusted nearby devices खोजने, encrypted sync, settings याद रखने और deletion सक्षम करने के लिए उपयोग होता है।",
+              "Album Box media या identifiers को advertising, profiling, cross-app tracking, AI training, content analysis या sale के लिए उपयोग नहीं करता।"
+            ]
+          },
+          {
+            heading: "4. तीसरे पक्ष और साझा करना",
+            paragraphs: [
+              "Album Box में analytics, ads, social login, payment, cloud, remote crash reporting या third-party AI SDK नहीं हैं।",
+              "हम personal information नहीं बेचते या किराए पर नहीं देते। Sync के दौरान चुना हुआ data केवल आपके confirm किए गए पास के device को भेजा जाता है।"
+            ]
+          },
+          {
+            heading: "5. संग्रहण और सुरक्षा",
+            paragraphs: [
+              "डेटा ऐप sandbox में locally stored है। Sensitive credentials, identifiers और keys आवश्यकता अनुसार Keychain में रहती हैं।",
+              "ऐप system sandbox, Keychain, Data Protection, system permissions और identity checks वाले encrypted sync channels उपयोग करता है।",
+              "Media और metadata तब तक रहते हैं जब तक आप delete, clear app data या uninstall न करें। Temporary sync data केवल active sync में उपयोग होता है।"
+            ]
+          },
+          {
+            heading: "6. आपके अधिकार",
+            paragraphs: [
+              "आप media देख सकते हैं, selected files export कर सकते हैं, folders rename कर सकते हैं, files move कर सकते हैं, local settings बदल सकते हैं और trusted devices manage कर सकते हैं।",
+              "आप Photos, Camera, Local Network और Face ID permissions system settings में revoke कर सकते हैं। आप items delete, Settings > Clear Data या app uninstall कर सकते हैं।",
+              `Album Box account creation या login प्रदान नहीं करता, इसलिए delete करने के लिए कोई server account नहीं है। Privacy requests के लिए ${CONTACT_EMAIL} पर संपर्क करें।`
+            ]
+          },
+          {
+            heading: "7. बच्चों की गोपनीयता",
+            paragraphs: [
+              "Album Box 13 वर्ष से कम उम्र के बच्चों के लिए निर्देशित नहीं है और जानबूझकर बच्चों की personal information एकत्र नहीं करता। Account server, cloud, analytics या ads न होने से ऐप ऐसी जानकारी third-party servers को जानबूझकर नहीं भेजता।"
+            ]
+          },
+          {
+            heading: "8. अपडेट और संपर्क",
+            paragraphs: [
+              "Data processing में महत्वपूर्ण बदलाव होने पर हम इस नीति और आवश्यक App Store disclosures अपडेट करेंगे।",
+              `संपर्क: ${CONTACT_EMAIL}. उत्तर लक्ष्य: request मिलने और verify होने के 15 business days के भीतर।`
+            ],
+          }
+        ]
+      },
+      tr: {
+        languageLabel: "Dil",
+        title: "Album Box Gizlilik Politikası",
+        meta: "Yürürlük tarihi: 7 Temmuz 2026 · Son güncelleme: 22 Temmuz 2026",
+        summaryTitle: "Gizlilik özeti",
+        summary: [
+          "Album Box yerel bir özel albüm kasasıdır; hesap sunucusu, bulut depolama, reklam SDK’sı veya üçüncü taraf analiz SDK’sı yoktur.",
+          "İçe aktardığınız fotoğraf ve videolar, seçtiğiniz içeriği güvenilir yakın bir cihaza eşzamanlamadıkça cihazınızda kalır.",
+          "Album Box uzak sunucuya sahip değildir ve hiçbir veriyi herhangi bir sunucuya iletmez. Kullanıcının başlattığı eşzamanlamada Yerel Ağ ve kablosuz veri izinleri dışında uygulama ağ erişimine ihtiyaç duymaz.",
+          "Uygulama IDFA, IDFV, konum, kişiler, mikrofon verisi, uzak çökme günlükleri veya uygulamalar arası takip verisi toplamaz."
+        ],
+        sections: [
+          {
+            heading: "1. Giriş",
+            paragraphs: [
+              "Album Box gizliliğinize saygı duyar ve yerel kontrol için tasarlanmıştır. Bu politika uygulamanın hangi bilgileri kullandığını veya sakladığını, amaçları, saklama yerini, paylaşımı ve haklarınızı açıklar.",
+              "iOS, iPadOS ve macOS üzerindeki Album Box için geçerlidir ve uygulamanın gerçek davranışı ile App Store Connect gizlilik beyanını yansıtır."
+            ]
+          },
+          {
+            heading: "2. Kullanılan bilgiler",
+            paragraphs: [
+              "Album Box yalnızca içe veya dışa aktardığınız fotoğraf ve videoları yerel özel albümler, oynatma, dışa aktarma ve seçtiğiniz eşzamanlama için kullanır.",
+              "Fotoğraflar izni seçilen medyaları içe ve dışa aktarmak içindir. Uygulama tüm kitaplığı arka planda taramaz.",
+              "Kamera yalnızca güvenilir cihazlardaki eşleme QR kodlarını taramak için kullanılır. Kamera görüntüleri yüklenmez.",
+              "PIN veya desen hashleri Keychain’de saklanabilir. Face ID ve Touch ID Apple sistemi tarafından işlenir; Album Box ham biyometrik veriyi okumaz veya saklamaz.",
+              "Şifreli eşzamanlama için uygulama yerel olarak üretilen cihaz kimliği, eşlenen cihaz adları, açık anahtarlar, güven kayıtları ve geçici manifestler saklar.",
+              "Yerel ayarlar ve günlükler cihazda kalır. Uygulama ad, e-posta, telefon, IDFA, IDFV, konum, kişiler, mikrofon, ödeme, reklam, analiz, uzak çökme veya sunucu IP günlüğü toplamaz."
+            ]
+          },
+          {
+            heading: "3. Amaçlar",
+            paragraphs: [
+              "Veriler yalnızca içe aktarma, düzenleme, erişim doğrulama, dışa aktarma, güvenilir cihazları bulma, şifreli eşzamanlama, ayarları hatırlama ve silme için kullanılır.",
+              "Album Box medya veya tanımlayıcıları reklam, profilleme, uygulamalar arası takip, AI eğitimi, içerik analizi veya satış için kullanmaz."
+            ]
+          },
+          {
+            heading: "4. Üçüncü taraflar ve paylaşım",
+            paragraphs: [
+              "Album Box analiz, reklam, sosyal giriş, ödeme, bulut, uzak çökme raporu veya üçüncü taraf AI SDK’sı içermez.",
+              "Kişisel bilgileri satmayız veya kiralamayız. Eşzamanlama sırasında seçilen veriler yalnızca onayladığınız yakındaki cihaza aktarılır."
+            ]
+          },
+          {
+            heading: "5. Saklama ve güvenlik",
+            paragraphs: [
+              "Veriler uygulama sandbox’ında yerel olarak saklanır. Hassas kimlik bilgileri, tanımlayıcılar ve anahtarlar uygun olduğunda Keychain’de saklanır.",
+              "Uygulama sistem sandbox’ı, Keychain, Data Protection, sistem izinleri ve kimlik kontrollü şifreli eşzamanlama kanalları kullanır.",
+              "Medya ve meta veriler siz silene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar kalır. Geçici eşzamanlama verileri yalnızca aktif akış için kullanılır."
+            ]
+          },
+          {
+            heading: "6. Haklarınız",
+            paragraphs: [
+              "Medyaları görüntüleyebilir, seçili dosyaları dışa aktarabilir, klasörleri yeniden adlandırabilir, dosyaları taşıyabilir, yerel ayarları değiştirebilir ve güvenilir cihazları yönetebilirsiniz.",
+              "Fotoğraflar, Kamera, Yerel Ağ ve Face ID izinlerini sistem ayarlarından geri alabilirsiniz. Öğeleri silebilir, Ayarlar > Verileri Temizle kullanabilir veya uygulamayı kaldırabilirsiniz.",
+              `Album Box hesap oluşturma veya giriş sunmaz; bu yüzden silinecek sunucu hesabı yoktur. Gizlilik talepleri için ${CONTACT_EMAIL} ile iletişime geçin.`
+            ]
+          },
+          {
+            heading: "7. Çocukların gizliliği",
+            paragraphs: [
+              "Album Box 13 yaş altı çocuklara yönelik değildir ve bilerek çocukların kişisel bilgilerini toplamaz. Hesap sunucusu, bulut, analiz veya reklam olmadığı için bu bilgiler üçüncü taraf sunuculara bilerek aktarılmaz."
+            ]
+          },
+          {
+            heading: "8. Güncellemeler ve iletişim",
+            paragraphs: [
+              "Veri işlemede önemli değişiklik olursa bu politikayı ve gerekli App Store beyanlarını güncelleriz.",
+              `İletişim: ${CONTACT_EMAIL}. Yanıt hedefi: talep alınıp doğrulandıktan sonra 15 iş günü içinde.`
+            ],
+          }
+        ]
+      },
+      pl: {
+        languageLabel: "Język",
+        title: "Polityka prywatności Album Box",
+        meta: "Data wejścia w życie: 7 lipca 2026 · Ostatnia aktualizacja: 22 lipca 2026",
+        summaryTitle: "Prywatność w skrócie",
+        summary: [
+          "Album Box to lokalny sejf prywatnych albumów bez serwera kont, chmury, SDK reklamowego i zewnętrznego SDK analitycznego.",
+          "Zaimportowane zdjęcia i filmy pozostają na urządzeniu, chyba że zsynchronizujesz wybrane treści z zaufanym pobliskim urządzeniem.",
+          "Album Box nie ma zdalnego serwera i nie przesyła żadnych danych na żaden serwer. Poza synchronizacją uruchomioną przez użytkownika z uprawnieniami sieci lokalnej i danych bezprzewodowych aplikacja nie potrzebuje dostępu do sieci.",
+          "Aplikacja nie zbiera IDFA, IDFV, lokalizacji, kontaktów, danych mikrofonu, zdalnych logów awarii ani danych śledzenia między aplikacjami."
+        ],
+        sections: [
+          {
+            heading: "1. Wprowadzenie",
+            paragraphs: [
+              "Album Box szanuje prywatność i został zaprojektowany do kontroli lokalnej. Polityka wyjaśnia, jakich informacji aplikacja używa lub jakie przechowuje, w jakim celu, gdzie, czy są udostępniane i jakie masz prawa.",
+              "Dotyczy Album Box na iOS, iPadOS i macOS oraz odzwierciedla rzeczywiste działanie aplikacji i deklaracje w App Store Connect."
+            ]
+          },
+          {
+            heading: "2. Używane informacje",
+            paragraphs: [
+              "Album Box używa tylko zdjęć i filmów importowanych lub eksportowanych przez użytkownika do lokalnych prywatnych albumów, odtwarzania, eksportu i wybranej synchronizacji.",
+              "Uprawnienie Zdjęcia służy do importu i eksportu wybranych multimediów. Aplikacja nie skanuje całej biblioteki w tle.",
+              "Kamera służy tylko do skanowania kodów QR parowania na zaufanych urządzeniach. Obrazy z kamery nie są przesyłane.",
+              "Hashe PIN lub wzoru mogą być zapisane w Keychain. Face ID i Touch ID obsługuje system Apple; Album Box nie czyta ani nie zapisuje surowych danych biometrycznych.",
+              "Do szyfrowanej synchronizacji aplikacja lokalnie przechowuje wygenerowany identyfikator urządzenia, nazwy sparowanych urządzeń, klucze publiczne, rekordy zaufania i tymczasowe manifesty.",
+              "Lokalne ustawienia i logi pozostają na urządzeniu. Aplikacja nie zbiera imienia, e-maila, telefonu, IDFA, IDFV, lokalizacji, kontaktów, mikrofonu, płatności, reklam, analityki, zdalnych awarii ani logów IP serwera."
+            ]
+          },
+          {
+            heading: "3. Cele",
+            paragraphs: [
+              "Dane służą tylko do importu, organizacji, weryfikacji dostępu, eksportu, znajdowania zaufanych urządzeń, szyfrowanej synchronizacji, zapamiętywania ustawień i usuwania.",
+              "Album Box nie używa multimediów ani identyfikatorów do reklam, profilowania, śledzenia między aplikacjami, trenowania AI, analizy treści ani sprzedaży."
+            ]
+          },
+          {
+            heading: "4. Podmioty trzecie i udostępnianie",
+            paragraphs: [
+              "Album Box nie zawiera SDK do analityki, reklam, logowania społecznościowego, płatności, chmury, zdalnego raportowania awarii ani usług AI stron trzecich.",
+              "Nie sprzedajemy ani nie wynajmujemy danych osobowych. Podczas synchronizacji wybrane dane trafiają tylko do pobliskiego urządzenia potwierdzonego przez użytkownika."
+            ]
+          },
+          {
+            heading: "5. Przechowywanie i bezpieczeństwo",
+            paragraphs: [
+              "Dane są przechowywane lokalnie w sandboxie aplikacji. Wrażliwe poświadczenia, identyfikatory i klucze są zapisywane w Keychain, gdy jest to właściwe.",
+              "Aplikacja używa sandboxa systemowego, Keychain, Data Protection, uprawnień systemowych i szyfrowanych kanałów synchronizacji ze sprawdzaniem tożsamości.",
+              "Multimedia i metadane pozostają do czasu usunięcia, wyczyszczenia danych aplikacji lub odinstalowania. Tymczasowe dane synchronizacji służą tylko aktywnemu procesowi."
+            ]
+          },
+          {
+            heading: "6. Twoje prawa",
+            paragraphs: [
+              "Możesz przeglądać multimedia, eksportować wybrane pliki, zmieniać nazwy folderów, przenosić pliki, zmieniać ustawienia lokalne i zarządzać zaufanymi urządzeniami.",
+              "Możesz cofnąć Zdjęcia, Kamerę, Sieć lokalną i Face ID w ustawieniach systemowych. Możesz usuwać elementy, użyć Ustawienia > Wyczyść dane lub odinstalować aplikację.",
+              `Album Box nie oferuje tworzenia konta ani logowania, więc nie ma konta serwerowego do usunięcia. W sprawach prywatności skontaktuj się: ${CONTACT_EMAIL}.`
+            ]
+          },
+          {
+            heading: "7. Prywatność dzieci",
+            paragraphs: [
+              "Album Box nie jest kierowany do dzieci poniżej 13 lat i nie zbiera świadomie ich danych osobowych. Bez serwera kont, chmury, analityki lub reklam aplikacja nie przekazuje takich danych celowo do serwerów stron trzecich."
+            ]
+          },
+          {
+            heading: "8. Aktualizacje i kontakt",
+            paragraphs: [
+              "W razie istotnej zmiany przetwarzania danych zaktualizujemy tę politykę i wymagane informacje w App Store.",
+              `Kontakt: ${CONTACT_EMAIL}. Cel odpowiedzi: w ciągu 15 dni roboczych po otrzymaniu i weryfikacji żądania.`
+            ],
+          }
+        ]
+      }
+    };
+
+    const subscriptionDisclosures = {
+      en: {
+        summary: "Subscriptions are handled by the Apple App Store. To purchase, restore, or verify a subscription, the device must be able to access the App Store using available Wi-Fi or cellular data. This doesn't require Album Box's Local Network permission, and Album Box doesn't connect to a developer-operated account server or cloud album service or upload album content.",
+        heading: "App Store Purchases and Subscription Status",
+        paragraphs: [
+          "Album Box does not operate an account server or cloud album service. Subscription purchases, purchase restoration, and entitlement verification are handled by Apple through StoreKit. During these operations, the system uses the device's currently available Wi-Fi or cellular network to access the App Store. You don't need to enable Album Box's Local Network permission for subscriptions; that permission is used only when you initiate nearby device sync. The developer doesn't receive your payment card details, and your photos, videos, and album data aren't uploaded as part of subscription verification."
+        ]
+      },
+      "zh-Hans": {
+        summary: "订阅由 Apple App Store 处理。购买、恢复或核验订阅时，设备需要能够正常访问 App Store；系统会使用当前可用的 Wi-Fi 或蜂窝网络。此过程不需要 Album Box 的“本地网络”权限，也不会连接开发者运营的账号服务器、云相册服务或上传相册内容。",
+        heading: "App Store 购买与订阅状态",
+        paragraphs: [
+          "Album Box 不运营账号服务器或云相册服务。订阅购买、恢复购买和权益核验由 Apple 通过 StoreKit 处理。进行这些操作时，系统会使用设备当前可用的 Wi-Fi 或蜂窝网络访问 App Store。您无需为订阅开启 Album Box 的“本地网络”权限；该权限仅在您主动使用附近设备同步时使用。开发者不会获得您的银行卡信息，照片、视频及相册数据也不会因订阅核验而上传。"
+        ]
+      },
+      "zh-Hant": {
+        summary: "訂閱由 Apple App Store 處理。購買、恢復或驗證訂閱時，裝置需要能正常存取 App Store；系統會使用目前可用的 Wi-Fi 或行動網路。此過程不需要 Album Box 的「本機網路」權限，也不會連線至開發者營運的帳號伺服器、雲端相簿服務或上傳相簿內容。",
+        heading: "App Store 購買與訂閱狀態",
+        paragraphs: [
+          "Album Box 不營運帳號伺服器或雲端相簿服務。訂閱購買、恢復購買和權益驗證由 Apple 透過 StoreKit 處理。進行這些操作時，系統會使用裝置目前可用的 Wi-Fi 或行動網路存取 App Store。您無需為訂閱開啟 Album Box 的「本機網路」權限；該權限僅在您主動使用附近裝置同步時使用。開發者不會取得您的付款卡資料，照片、影片及相簿資料也不會因訂閱驗證而上傳。"
+        ]
+      },
+      fr: {
+        summary: "Les abonnements sont traités par l'Apple App Store. Pour acheter, restaurer ou vérifier un abonnement, l'appareil doit pouvoir accéder à l'App Store par le réseau Wi-Fi ou cellulaire disponible. L'autorisation « Réseau local » d'Album Box n'est pas nécessaire, et Album Box ne se connecte à aucun serveur de compte ni service d'album dans le cloud exploité par le développeur et ne téléverse pas le contenu des albums.",
+        heading: "Achats App Store et statut de l'abonnement",
+        paragraphs: [
+          "Album Box n'exploite aucun serveur de compte ni service d'album dans le cloud. Les achats d'abonnement, la restauration des achats et la vérification des droits sont traités par Apple via StoreKit. Pendant ces opérations, le système utilise le réseau Wi-Fi ou cellulaire actuellement disponible sur l'appareil pour accéder à l'App Store. Il n'est pas nécessaire d'activer l'autorisation « Réseau local » d'Album Box pour les abonnements ; cette autorisation est utilisée uniquement lorsque vous lancez la synchronisation avec un appareil à proximité. Le développeur ne reçoit pas les informations de votre carte bancaire, et vos photos, vidéos et données d'album ne sont pas téléversées lors de la vérification de l'abonnement."
+        ]
+      },
+      de: {
+        summary: "Abonnements werden über den Apple App Store abgewickelt. Für Kauf, Wiederherstellung oder Prüfung muss das Gerät über das verfügbare WLAN oder Mobilfunknetz auf den App Store zugreifen können. Dafür ist die Berechtigung „Lokales Netzwerk“ von Album Box nicht erforderlich; Album Box verbindet sich weder mit einem vom Entwickler betriebenen Kontoserver noch mit einem Cloud-Albumdienst und lädt keine Albuminhalte hoch.",
+        heading: "App Store-Käufe und Abonnementstatus",
+        paragraphs: [
+          "Album Box betreibt weder einen Kontoserver noch einen Cloud-Albumdienst. Abonnementkäufe, die Wiederherstellung von Käufen und die Prüfung von Zugriffsrechten werden von Apple über StoreKit verarbeitet. Dabei verwendet das System das aktuell verfügbare WLAN oder Mobilfunknetz des Geräts, um auf den App Store zuzugreifen. Für Abonnements muss die Berechtigung „Lokales Netzwerk“ von Album Box nicht aktiviert werden; sie wird nur verwendet, wenn Sie die Synchronisierung mit Geräten in der Nähe starten. Der Entwickler erhält keine Angaben zu Ihrer Zahlungskarte, und Ihre Fotos, Videos und Albumdaten werden bei der Abonnementprüfung nicht hochgeladen."
+        ]
+      },
+      it: {
+        summary: "Gli abbonamenti sono gestiti dall'Apple App Store. Per acquistare, ripristinare o verificare un abbonamento, il dispositivo deve poter accedere all'App Store tramite la rete Wi-Fi o cellulare disponibile. Non serve l'autorizzazione “Rete locale” di Album Box e Album Box non si connette a server per account o servizi di album sul cloud gestiti dallo sviluppatore né carica i contenuti degli album.",
+        heading: "Acquisti su App Store e stato dell'abbonamento",
+        paragraphs: [
+          "Album Box non gestisce server per account né servizi di album sul cloud. Gli acquisti degli abbonamenti, il ripristino degli acquisti e la verifica dei diritti sono gestiti da Apple tramite StoreKit. Durante queste operazioni, il sistema usa la rete Wi-Fi o cellulare attualmente disponibile sul dispositivo per accedere all'App Store. Per gli abbonamenti non è necessario abilitare l'autorizzazione “Rete locale” di Album Box; questa autorizzazione viene usata solo quando avvii la sincronizzazione con dispositivi nelle vicinanze. Lo sviluppatore non riceve i dati della tua carta di pagamento e foto, video e dati degli album non vengono caricati durante la verifica dell'abbonamento."
+        ]
+      },
+      es: {
+        summary: "Las suscripciones se gestionan mediante el Apple App Store. Para comprar, restaurar o verificar una suscripción, el dispositivo debe poder acceder al App Store mediante la red Wi-Fi o celular disponible. No se necesita el permiso “Red local” de Album Box, y Album Box no se conecta a servidores de cuentas ni servicios de álbumes en la nube operados por el desarrollador ni carga el contenido de los álbumes.",
+        heading: "Compras en App Store y estado de la suscripción",
+        paragraphs: [
+          "Album Box no opera servidores de cuentas ni servicios de álbumes en la nube. Apple gestiona mediante StoreKit las compras de suscripciones, la restauración de compras y la verificación de derechos. Durante estas operaciones, el sistema utiliza la red Wi-Fi o celular disponible en el dispositivo para acceder al App Store. No es necesario activar el permiso “Red local” de Album Box para las suscripciones; ese permiso solo se utiliza cuando inicias la sincronización con dispositivos cercanos. El desarrollador no recibe los datos de tu tarjeta de pago, y tus fotos, videos y datos de álbumes no se cargan durante la verificación de la suscripción."
+        ]
+      },
+      nl: {
+        summary: "Abonnementen worden verwerkt door de Apple App Store. Om een abonnement te kopen, herstellen of controleren, moet het apparaat via beschikbare wifi of mobiele data toegang hebben tot de App Store. Hiervoor is de toestemming 'Lokaal netwerk' van Album Box niet nodig. Album Box maakt geen verbinding met een accountserver of cloudalbumdienst van de ontwikkelaar en uploadt geen albuminhoud.",
+        heading: "App Store-aankopen en abonnementsstatus",
+        paragraphs: [
+          "Album Box beheert geen accountserver of cloudalbumdienst. Aankopen van abonnementen, het herstellen van aankopen en het controleren van rechten worden door Apple via StoreKit verwerkt. Tijdens deze handelingen gebruikt het systeem het momenteel beschikbare wifi- of mobiele netwerk van het apparaat om toegang te krijgen tot de App Store. Voor abonnementen hoef je de toestemming 'Lokaal netwerk' van Album Box niet in te schakelen; die toestemming wordt alleen gebruikt wanneer je synchronisatie met apparaten in de buurt start. De ontwikkelaar ontvangt je betaalkaartgegevens niet en je foto's, video's en albumgegevens worden bij de abonnementscontrole niet geüpload."
+        ]
+      },
+      sv: {
+        summary: "Prenumerationer hanteras av Apple App Store. För att köpa, återställa eller kontrollera en prenumeration måste enheten kunna nå App Store via tillgängligt Wi-Fi eller mobildata. Behörigheten Lokalt nätverk för Album Box behövs inte, och Album Box ansluter inte till någon kontoserver eller molnalbumtjänst som drivs av utvecklaren och laddar inte upp albuminnehåll.",
+        heading: "App Store-köp och prenumerationsstatus",
+        paragraphs: [
+          "Album Box driver ingen kontoserver eller molnalbumtjänst. Prenumerationsköp, återställning av köp och kontroll av behörighet hanteras av Apple via StoreKit. Under dessa åtgärder använder systemet enhetens aktuellt tillgängliga Wi-Fi- eller mobilnät för att nå App Store. Du behöver inte aktivera behörigheten Lokalt nätverk för Album Box för prenumerationer; den behörigheten används endast när du startar synkronisering med enheter i närheten. Utvecklaren får inte dina betalkortsuppgifter och dina bilder, videor och albumdata laddas inte upp vid prenumerationskontrollen."
+        ]
+      },
+      nb: {
+        summary: "Abonnementer håndteres av Apple App Store. For å kjøpe, gjenopprette eller kontrollere et abonnement må enheten kunne nå App Store via tilgjengelig Wi-Fi eller mobildata. Tillatelsen Lokalt nettverk for Album Box er ikke nødvendig, og Album Box kobler ikke til noen kontoserver eller skyalbumtjeneste som drives av utvikleren og laster ikke opp albuminnhold.",
+        heading: "App Store-kjøp og abonnementsstatus",
+        paragraphs: [
+          "Album Box driver ingen kontoserver eller skyalbumtjeneste. Abonnementskjøp, gjenoppretting av kjøp og kontroll av rettigheter håndteres av Apple via StoreKit. Under disse handlingene bruker systemet enhetens tilgjengelige Wi-Fi- eller mobilnett for å få tilgang til App Store. Du trenger ikke å aktivere tillatelsen Lokalt nettverk for Album Box for abonnementer; denne tillatelsen brukes bare når du starter synkronisering med enheter i nærheten. Utvikleren mottar ikke betalingskortopplysningene dine, og bilder, videoer og albumdata lastes ikke opp ved abonnementskontrollen."
+        ]
+      },
+      da: {
+        summary: "Abonnementer håndteres af Apple App Store. For at købe, gendanne eller kontrollere et abonnement skal enheden kunne få adgang til App Store via tilgængeligt Wi-Fi eller mobildata. Tilladelsen Lokalt netværk for Album Box er ikke nødvendig, og Album Box opretter ikke forbindelse til en kontoserver eller cloudalbumtjeneste, som drives af udvikleren, og uploader ikke albumindhold.",
+        heading: "App Store-køb og abonnementsstatus",
+        paragraphs: [
+          "Album Box driver ikke en kontoserver eller cloudalbumtjeneste. Abonnementskøb, gendannelse af køb og kontrol af rettigheder håndteres af Apple via StoreKit. Under disse handlinger bruger systemet enhedens aktuelt tilgængelige Wi-Fi- eller mobilnetværk til at få adgang til App Store. Du behøver ikke at aktivere tilladelsen Lokalt netværk for Album Box til abonnementer; tilladelsen bruges kun, når du starter synkronisering med enheder i nærheden. Udvikleren modtager ikke dine betalingskortoplysninger, og dine billeder, videoer og albumdata uploades ikke under abonnementskontrollen."
+        ]
+      },
+      ja: {
+        summary: "サブスクリプションはApple App Storeが処理します。購入、復元、確認を行うには、利用可能なWi-Fiまたはモバイル通信でデバイスからApp Storeにアクセスできる必要があります。Album Boxの「ローカルネットワーク」権限は不要です。また、Album Boxが開発者運営のアカウントサーバーやクラウドアルバムサービスに接続したり、アルバムの内容をアップロードしたりすることはありません。",
+        heading: "App Storeでの購入とサブスクリプション状況",
+        paragraphs: [
+          "Album Boxは、アカウントサーバーやクラウドアルバムサービスを運営していません。サブスクリプションの購入、購入の復元、利用権の確認は、StoreKitを通じてAppleが処理します。これらの操作では、システムがデバイスで現在利用可能なWi-Fiまたはモバイル通信を使用してApp Storeにアクセスします。サブスクリプションのためにAlbum Boxの「ローカルネットワーク」権限を有効にする必要はありません。この権限は、近くのデバイスとの同期を開始した場合にのみ使用されます。開発者が支払いカード情報を取得することはなく、サブスクリプションの確認によって写真、ビデオ、アルバムデータがアップロードされることもありません。"
+        ]
+      },
+      ko: {
+        summary: "구독은 Apple App Store에서 처리합니다. 구독을 구입, 복원 또는 확인하려면 기기가 사용 가능한 Wi-Fi 또는 셀룰러 데이터로 App Store에 접속할 수 있어야 합니다. Album Box의 '로컬 네트워크' 권한은 필요하지 않으며, Album Box는 개발자가 운영하는 계정 서버나 클라우드 앨범 서비스에 연결하거나 앨범 콘텐츠를 업로드하지 않습니다.",
+        heading: "App Store 구입 및 구독 상태",
+        paragraphs: [
+          "Album Box는 계정 서버나 클라우드 앨범 서비스를 운영하지 않습니다. 구독 구입, 구입 항목 복원 및 이용 권한 확인은 Apple이 StoreKit을 통해 처리합니다. 이 작업을 수행할 때 시스템은 기기에서 현재 사용 가능한 Wi-Fi 또는 셀룰러 네트워크를 사용하여 App Store에 접속합니다. 구독을 위해 Album Box의 '로컬 네트워크' 권한을 활성화할 필요는 없습니다. 이 권한은 사용자가 주변 기기 동기화를 시작할 때만 사용됩니다. 개발자는 결제 카드 정보를 받지 않으며 구독 확인 과정에서 사진, 비디오 또는 앨범 데이터가 업로드되지 않습니다."
+        ]
+      },
+      ar: {
+        summary: "تتولى Apple App Store معالجة الاشتراكات. لشراء اشتراك أو استعادته أو التحقق منه، يجب أن يتمكن الجهاز من الوصول إلى App Store عبر شبكة Wi-Fi أو البيانات الخلوية المتاحة. لا يتطلب ذلك إذن «الشبكة المحلية» في Album Box، ولا يتصل Album Box بخادم حسابات أو خدمة ألبومات سحابية يشغّلها المطوّر ولا يرفع محتوى الألبومات.",
+        heading: "عمليات الشراء من App Store وحالة الاشتراك",
+        paragraphs: [
+          "لا يشغّل Album Box خادم حسابات أو خدمة ألبومات سحابية. تتولى Apple عبر StoreKit معالجة شراء الاشتراك واستعادة المشتريات والتحقق من الاستحقاق. أثناء هذه العمليات، يستخدم النظام شبكة Wi-Fi أو شبكة البيانات الخلوية المتاحة حاليًا على الجهاز للوصول إلى App Store. لا تحتاج إلى تمكين إذن «الشبكة المحلية» في Album Box للاشتراك؛ ولا يُستخدم هذا الإذن إلا عندما تبدأ مزامنة الأجهزة القريبة. لا يحصل المطوّر على بيانات بطاقة الدفع، ولا تُرفع صورك أو فيديوهاتك أو بيانات ألبوماتك أثناء التحقق من الاشتراك."
+        ]
+      },
+      he: {
+        summary: "המינויים מטופלים על ידי Apple App Store. כדי לרכוש, לשחזר או לאמת מינוי, המכשיר צריך להיות מסוגל לגשת ל-App Store באמצעות Wi-Fi או נתונים סלולריים זמינים. אין צורך בהרשאת „רשת מקומית” של Album Box, ו-Album Box אינה מתחברת לשרת חשבונות או לשירות אלבומים בענן שמופעלים על ידי המפתח ואינה מעלה תוכן אלבומים.",
+        heading: "רכישות ב-App Store ומצב המינוי",
+        paragraphs: [
+          "Album Box אינה מפעילה שרת חשבונות או שירות אלבומים בענן. רכישת מינוי, שחזור רכישות ואימות זכאות מטופלים על ידי Apple באמצעות StoreKit. במהלך פעולות אלה, המערכת משתמשת ברשת ה-Wi-Fi או ברשת הסלולרית הזמינה כעת במכשיר כדי לגשת ל-App Store. אין צורך להפעיל את הרשאת „רשת מקומית” של Album Box לצורך המינוי; הרשאה זו משמשת רק כאשר מתחילים סנכרון עם מכשירים קרובים. המפתח אינו מקבל את פרטי כרטיס התשלום שלך, והתמונות, הסרטונים ונתוני האלבומים שלך אינם מועלים במסגרת אימות המינוי."
+        ]
+      },
+      hi: {
+        summary: "सब्सक्रिप्शन Apple App Store द्वारा संभाले जाते हैं। सब्सक्रिप्शन खरीदने, बहाल करने या सत्यापित करने के लिए डिवाइस को उपलब्ध Wi-Fi या सेल्युलर डेटा से App Store तक पहुंचना चाहिए। इसके लिए Album Box की ‘लोकल नेटवर्क’ अनुमति जरूरी नहीं है, और Album Box डेवलपर द्वारा संचालित अकाउंट सर्वर या क्लाउड एल्बम सेवा से कनेक्ट नहीं होता और एल्बम सामग्री अपलोड नहीं करता।",
+        heading: "App Store खरीदारी और सब्सक्रिप्शन की स्थिति",
+        paragraphs: [
+          "Album Box कोई अकाउंट सर्वर या क्लाउड एल्बम सेवा संचालित नहीं करता। सब्सक्रिप्शन खरीद, खरीदारी बहाल करना और पात्रता सत्यापन Apple द्वारा StoreKit के माध्यम से संभाले जाते हैं। इन कार्यों के दौरान सिस्टम App Store तक पहुंचने के लिए डिवाइस पर उपलब्ध Wi-Fi या सेल्युलर नेटवर्क का उपयोग करता है। सब्सक्रिप्शन के लिए Album Box की ‘लोकल नेटवर्क’ अनुमति चालू करने की आवश्यकता नहीं है; यह अनुमति केवल तब उपयोग होती है जब आप पास के डिवाइस के साथ सिंक शुरू करते हैं। डेवलपर को आपके भुगतान कार्ड की जानकारी नहीं मिलती और सब्सक्रिप्शन सत्यापन के दौरान आपकी फोटो, वीडियो या एल्बम डेटा अपलोड नहीं होते।"
+        ]
+      },
+      pt: {
+        summary: "As assinaturas são processadas pela Apple App Store. Para comprar, restaurar ou verificar uma assinatura, o dispositivo precisa acessar a App Store pela rede Wi-Fi ou celular disponível. A permissão “Rede Local” do Album Box não é necessária, e o Album Box não se conecta a servidor de contas ou serviço de álbuns na nuvem operado pelo desenvolvedor nem envia o conteúdo dos álbuns.",
+        heading: "Compras na App Store e status da assinatura",
+        paragraphs: [
+          "O Album Box não opera servidor de contas nem serviço de álbuns na nuvem. As compras de assinaturas, a restauração de compras e a verificação de direitos são processadas pela Apple por meio do StoreKit. Durante essas operações, o sistema usa a rede Wi-Fi ou celular disponível no dispositivo para acessar a App Store. Não é necessário ativar a permissão “Rede Local” do Album Box para assinaturas; essa permissão só é usada quando você inicia a sincronização com dispositivos próximos. O desenvolvedor não recebe os dados do seu cartão de pagamento, e suas fotos, vídeos e dados de álbuns não são enviados durante a verificação da assinatura."
+        ]
+      },
+      tr: {
+        summary: "Abonelikler Apple App Store tarafından işlenir. Bir aboneliği satın almak, geri yüklemek veya doğrulamak için aygıtın kullanılabilir Wi-Fi ya da hücresel veri üzerinden App Store'a erişebilmesi gerekir. Album Box'ın 'Yerel Ağ' izni gerekmez; Album Box geliştirici tarafından işletilen bir hesap sunucusuna veya bulut albüm hizmetine bağlanmaz ve albüm içeriğini yüklemez.",
+        heading: "App Store Satın Alımları ve Abonelik Durumu",
+        paragraphs: [
+          "Album Box bir hesap sunucusu veya bulut albüm hizmeti işletmez. Abonelik satın alımları, satın alımları geri yükleme ve hak doğrulama işlemleri Apple tarafından StoreKit aracılığıyla gerçekleştirilir. Bu işlemler sırasında sistem, App Store'a erişmek için aygıtta o anda kullanılabilen Wi-Fi veya hücresel ağı kullanır. Abonelikler için Album Box'ın 'Yerel Ağ' iznini etkinleştirmeniz gerekmez; bu izin yalnızca yakındaki aygıtlarla eşzamanlamayı başlattığınızda kullanılır. Geliştirici ödeme kartı bilgilerinizi almaz; fotoğraflarınız, videolarınız ve albüm verileriniz abonelik doğrulaması sırasında yüklenmez."
+        ]
+      },
+      pl: {
+        summary: "Subskrypcje są obsługiwane przez Apple App Store. Aby kupić, przywrócić lub zweryfikować subskrypcję, urządzenie musi mieć dostęp do App Store przez dostępną sieć Wi-Fi lub dane komórkowe. Uprawnienie Album Box do sieci lokalnej nie jest wymagane; Album Box nie łączy się z serwerem kont ani usługą albumów w chmurze obsługiwaną przez dewelopera i nie przesyła zawartości albumów.",
+        heading: "Zakupy w App Store i stan subskrypcji",
+        paragraphs: [
+          "Album Box nie obsługuje serwera kont ani usługi albumów w chmurze. Zakup subskrypcji, przywracanie zakupów i weryfikacja uprawnień są realizowane przez Apple za pośrednictwem StoreKit. Podczas tych operacji system korzysta z aktualnie dostępnej sieci Wi-Fi lub komórkowej urządzenia, aby uzyskać dostęp do App Store. Na potrzeby subskrypcji nie trzeba włączać uprawnienia Album Box do sieci lokalnej; jest ono używane tylko po rozpoczęciu synchronizacji z pobliskimi urządzeniami. Deweloper nie otrzymuje danych karty płatniczej, a zdjęcia, wideo i dane albumów nie są przesyłane podczas weryfikacji subskrypcji."
+        ]
+      }
+    };
+
+    function renderPolicy(locale) {
+      const policyKey = localeMap[locale] || "en";
+      const policy = policies[policyKey] || policies.en;
+      const subscriptionDisclosure = subscriptionDisclosures[policyKey] || subscriptionDisclosures.en;
+      const isRtl = policyKey === "ar" || policyKey === "he";
+
+      document.documentElement.lang = locale;
+      document.documentElement.dir = isRtl ? "rtl" : "ltr";
+      document.title = policy.title;
+
+      document.getElementById("languageLabel").textContent = policy.languageLabel;
+      document.getElementById("policyTitle").textContent = policy.title;
+      document.getElementById("policyMeta").textContent = policy.meta;
+      document.getElementById("summaryTitle").textContent = policy.summaryTitle;
+
+      const summaryList = document.getElementById("summaryList");
+      const renderedSummary = policy.summary.map((text, index) => (
+        index === 2 ? subscriptionDisclosure.summary : text
+      ));
+      summaryList.replaceChildren(...renderedSummary.map((text) => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        return li;
+      }));
+
+      const main = document.getElementById("policySections");
+      const renderedSections = [
+        ...policy.sections,
+        {
+          heading: subscriptionDisclosure.heading,
+          paragraphs: subscriptionDisclosure.paragraphs
+        }
+      ];
+      main.replaceChildren(...renderedSections.map((section) => {
+        const node = document.createElement("section");
+        const heading = document.createElement("h2");
+        heading.textContent = section.heading;
+        node.appendChild(heading);
+
+        section.paragraphs.forEach((text) => {
+          const paragraph = document.createElement("p");
+          paragraph.textContent = text;
+          node.appendChild(paragraph);
+        });
+
+        if (section.notice) {
+          const notice = document.createElement("p");
+          notice.className = "notice";
+          notice.textContent = section.notice;
+          node.appendChild(notice);
+        }
+
+        return node;
+      }));
+    }
+
+    const select = document.getElementById("languageSelect");
+    languageOptions.forEach(([value, label]) => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = label;
+      select.appendChild(option);
+    });
+
+    const hashLocale = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    const initialLocale = localeMap[hashLocale] ? hashLocale : "en";
+    select.value = initialLocale;
+    renderPolicy(initialLocale);
+
+    select.addEventListener("change", () => {
+      const locale = select.value;
+      renderPolicy(locale);
+      history.replaceState(null, "", `#${encodeURIComponent(locale)}`);
+    });
+  </script>
+  <noscript>
+    <div class="page">
+      <section>
+        <h2>Album Box Privacy Policy</h2>
+        <p>Album Box stores private album data locally on your device, does not provide cloud storage, does not include advertising or analytics SDKs, and does not collect cross-app tracking data. Enable JavaScript to use the language switcher on this page.</p>
+      </section>
+    </div>
+  </noscript>
+</body>
+</html>
